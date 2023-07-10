@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { applyTheme, setTheme } from "/Theme";
 
 // PAGES
+import FourOFour from "./Pages/FourOFour";
 
 // COMPONENTS
 import Nav from "./Components/Nav";
@@ -27,7 +28,13 @@ function App() {
       <Router>
         {!errorPage && <Nav handleThemeChange={handleThemeChange} />}
         <Routes>
-          <Route path="/" element={}/>
+          <Route path="/" />
+          <Route
+            path="*"
+            element={
+              <FourOFour errorPage={errorPage} setErrorPage={setErrorPage} />
+            }
+          />
         </Routes>
       </Router>
     </div>
