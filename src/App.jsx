@@ -3,7 +3,7 @@
 // DEPENDENCIES
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { applyTheme, setTheme } from "../../Theme";
+import { applyTheme, setTheme } from "/Theme";
 
 // PAGES
 
@@ -27,7 +27,7 @@ function App() {
       <Router>
         {!errorPage && <Nav handleThemeChange={handleThemeChange} />}
         <Routes>
-          
+          <Route path="/" element={}/>
         </Routes>
       </Router>
     </div>
