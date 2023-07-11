@@ -32,28 +32,25 @@ function App() {
   }
   return (
     <main className="h-full w-full dark:bg-gradient-to-b from-dark via-primary dark:to-dark">
-      <div>
-        <Router>
-          {!errorPage && <Nav handleThemeChange={handleThemeChange} />}
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route
-              path="/projects"
-              element={<Index setErrorPage={setErrorPage} />}
-            />
-            <Route path="/projects/:id" element={<Show />} />
-            <Route
-              path="*"
-              element={
-                <FourOFour errorPage={errorPage} setErrorPage={setErrorPage} />
-              }
-            />
-          </Routes>
-        </Router>
-      </div>
-      hello
+      <Router>
+        {!errorPage && <Nav handleThemeChange={handleThemeChange} />}
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route
+            path="/projects"
+            element={<Index setErrorPage={setErrorPage} />}
+          />
+          <Route path="/projects/:id" element={<Show />} />
+          <Route
+            path="*"
+            element={
+              <FourOFour errorPage={errorPage} setErrorPage={setErrorPage} />
+            }
+          />
+        </Routes>
+      </Router>
     </main>
   );
 }

@@ -13,6 +13,10 @@ export const applyTheme = () => {
 };
 
 export const setTheme = (theme) => {
-  localStorage.theme = theme;
+  if (theme === 'light') {
+    localStorage.theme = 'dark';
+  } else {
+    localStorage.theme = 'light';
+  }
 };
 
