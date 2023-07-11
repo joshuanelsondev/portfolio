@@ -31,7 +31,7 @@ function App() {
     applyTheme();
   }
   return (
-    <main className="h-full w-full dark:bg-gradient-to-b from-dark via-primary dark:to-dark">
+    <main className="h-full w-full bg-gradient-to-t from-[#dfe9f3] to-white to-100% dark:bg-gradient-to-b dark:from-dark dark:via-primary dark:to-dark">
       <Router>
         {!errorPage && <Nav handleThemeChange={handleThemeChange} />}
         <Routes>

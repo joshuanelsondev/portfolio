@@ -12,7 +12,6 @@ import {
 } from "react-icons/md";
 import {
   AiOutlineAppstore,
-  AiOutlineAppstoreAdd,
   AiOutlineMenu,
 } from "react-icons/ai";
 
@@ -41,8 +40,8 @@ export default function Nav({ handleThemeChange }) {
           <MdHome
             onClick={() => navigate("/")}
             className={`peer text-primary hover:bg-secondary dark:text-blue dark:hover:bg-dark rounded-full p-2 cursor-pointer ${
-              currentPage("/") && "bg-secondary"
-            } dark:${currentPage("/") && "bg-dark"}`}
+              currentPage("/") && "bg-secondary dark:bg-dark"
+            }`}
             size={40}
           />
           <p
@@ -56,8 +55,8 @@ export default function Nav({ handleThemeChange }) {
           <MdAccountCircle
             onClick={() => navigate("/about")}
             className={`peer text-primary dark:text-blue hover:bg-secondary dark:hover:bg-dark rounded-full p-2 cursor-pointer ${
-              currentPage("/about") && "bg-secondary"
-            }  dark:${currentPage("/about") && "bg-dark"}`}
+              currentPage("/about") && "bg-secondary dark:bg-dark"
+            }`}
             size={40}
           />
           <p className="invisible text-primary dark:text-blue font-semibold peer-hover:visible">
@@ -68,8 +67,8 @@ export default function Nav({ handleThemeChange }) {
           <AiOutlineAppstore
             onClick={() => navigate("/projects")}
             className={`peer text-primary dark:text-blue hover:bg-secondary dark:hover:bg-dark p-[8px] rounded-full cursor-pointer ${
-              currentPage("/projects") && "bg-secondary"
-            }  dark:${currentPage("/projects") && "bg-dark"}`}
+              currentPage("/projects") && "bg-secondary dark:bg-dark"
+            }`}
             size={40}
           />
           <p className="invisible text-primary dark:text-blue font-semibold peer-hover:visible">
@@ -80,8 +79,8 @@ export default function Nav({ handleThemeChange }) {
           <MdEmail
             onClick={() => navigate("/contact")}
             className={`peer text-primary dark:text-blue hover:bg-secondary dark:hover:bg-dark rounded-full p-2 cursor-pointer ${
-              currentPage("/contact") && "bg-secondary"
-            }  dark:${currentPage("/contact") && "bg-dark"}`}
+              currentPage("/contact") && "bg-secondary dark:bg-dark"
+            }`}
             size={40}
           />
           <p className="invisible text-primary dark:text-blue font-semibold peer-hover:visible">
@@ -92,7 +91,7 @@ export default function Nav({ handleThemeChange }) {
         <div className="relative">
           <div className="absolute invisible dark:visible flex items-center lg:gap-4 md:gap-1">
             <MdOutlineDarkMode
-              onClick={() => handleThemeChange('dark')}
+              onClick={() => handleThemeChange("dark")}
               className="peer text-blue hover:bg-dark rounded-full p-2 cursor-pointer"
               size={40}
             />
@@ -102,7 +101,7 @@ export default function Nav({ handleThemeChange }) {
           </div>
           <div className="absolute dark:invisible flex items-center lg:gap-4 md:gap-1">
             <MdOutlineLightMode
-              onClick={() => handleThemeChange('light')}
+              onClick={() => handleThemeChange("light")}
               className="peer text-primary hover:bg-secondary rounded-full p-2 cursor-pointer"
               size={40}
             />
