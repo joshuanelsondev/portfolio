@@ -31,11 +31,11 @@ function App() {
     applyTheme();
   }
   return (
-    <main className="h-full w-full bg-gradient-to-t from-[#dfe9f3] to-white to-100% dark:bg-gradient-to-b dark:from-dark dark:via-primary dark:to-dark">
+    <main className="h-full w-full bg-gradient-to-b from-[#dfe9f3] via-white to-[#dfe9f3] dark:bg-gradient-to-b dark:from-dark dark:via-primary dark:to-dark">
       <Router>
         {!errorPage && <Nav handleThemeChange={handleThemeChange} />}
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home setErrorPage={setErrorPage} />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route

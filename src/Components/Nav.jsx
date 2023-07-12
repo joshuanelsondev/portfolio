@@ -35,7 +35,7 @@ export default function Nav({ handleThemeChange }) {
 
   return (
     <div>
-      <div className="hidden lg:flex flex-col fixed top-[20%] gap-12 ml-1 sm:ml-4">
+      <div className="hidden lg:flex flex-col fixed top-[20%] gap-12 ml-1 sm:ml-4 z-40">
         <div className="flex items-center lg:gap-4 md:gap-1">
           <MdHome
             onClick={() => navigate("/")}
