@@ -32,10 +32,13 @@ export default function Nav({ handleThemeChange }) {
   const currentPage = (path) => {
     return location.pathname === path;
   };
-  console.log(currentPage('/'))
+
 
   return (
     <div>
+      <h2 className={`${currentPage('/') ? 'hidden' : 'visible'} text-primary dark:text-blue text-2xl text-shadow mr-4 pt-4 absolute right-0`}>
+        Joshua Nelson
+      </h2>
       <div className="hidden lg:flex flex-col fixed top-[25%] gap-12 ml-1 sm:ml-4 z-40">
         <div className="flex items-center lg:gap-4 md:gap-1">
           <MdHome
@@ -183,13 +186,13 @@ export default function Nav({ handleThemeChange }) {
                 className={`invisible dark:visible flex items-center gap-1 group hover:text-dark cursor-pointer absolute`}
               >
                 <MdOutlineDarkMode
-                  onClick={() => handleThemeChange('dark')}
+                  onClick={() => handleThemeChange("dark")}
                   className="rounded-full p-2 group-hover:scale-110 text-secondary group-hover:text-dark"
                   size={30}
                 />
                 <p
                   className="text-sm text-secondary font-semibold hover:scale-110 group-hover:scale-110 group-hover:text-dark"
-                  onClick={() => handleThemeChange('dark')}
+                  onClick={() => handleThemeChange("dark")}
                 >
                   Dark
                 </p>
@@ -198,13 +201,13 @@ export default function Nav({ handleThemeChange }) {
                 className={`dark:invisible flex items-center gap-1 group cursor-pointer hover:text-dark text-secondary`}
               >
                 <MdOutlineLightMode
-                  onClick={() => handleThemeChange('light')}
+                  onClick={() => handleThemeChange("light")}
                   className="rounded-full p-2 group-hover:scale-110"
                   size={30}
                 />
                 <p
                   className="text-sm font-semibold hover:scale-110 group-hover: group-hover:scale-110"
-                  onClick={() => handleThemeChange('light')}
+                  onClick={() => handleThemeChange("light")}
                 >
                   Light
                 </p>
