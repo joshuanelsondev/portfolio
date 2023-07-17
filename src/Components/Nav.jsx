@@ -32,6 +32,7 @@ export default function Nav({ handleThemeChange }) {
   const currentPage = (path) => {
     return location.pathname === path;
   };
+  console.log(currentPage('/'))
 
   return (
     <div>
@@ -120,7 +121,7 @@ export default function Nav({ handleThemeChange }) {
           />
         </div>
         {showNav && (
-          <div className="fixed top-9 ml-20 w-fit pr-4 z-40 h-fit bg-primary transition-transform duration-1000 ease-in-out transform translate-y-4 lg:hidden">
+          <div className="fixed top-9 ml-20 w-fit pr-4 z-30 h-fit bg-primary transition-transform duration-1000 ease-in-out transform translate-y-4 lg:hidden">
             <div
               className={`flex items-center gap-1 group cursor-pointer ${
                 currentPage("/") ? "text-dark" : "text-secondary"

@@ -15,9 +15,8 @@ export default function Home({ setErrorPage }) {
     }, [setErrorPage]);
 
     return (
-      <div className="flex flex-col">
-        <div className="flex justify-center mt-[10%] gap-20 relative">
-          <div className="w-96 xl:w-9/12 h-auto mt-20 text-center z-10">
+      <div className="flex shrink-0 justify-center items-center h-full ">
+          <div className="w-96 xl:w-9/12 h-auto text-center z-10">
             <h1 className="text-6xl xl:text-8xl text-primary dark:text-blue font-semibold text-shadow">
               Joshua Nelson
             </h1>
@@ -95,7 +94,6 @@ export default function Home({ setErrorPage }) {
               </div>
             </div>
           </div>
-        </div>
       </div>
     );
 }

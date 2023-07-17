@@ -1,5 +1,6 @@
 // About.jsx
+import AboutMe from "../Components/AboutMe";
 
 export default function About() {
-    return <div></div>
+    return <div><AboutMe /></div>;
 }
