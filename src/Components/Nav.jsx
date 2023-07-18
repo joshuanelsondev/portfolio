@@ -36,7 +36,7 @@ export default function Nav({ handleThemeChange }) {
 
   return (
     <div>
-      <h2 className={`${currentPage('/') ? 'hidden' : 'visible'} text-primary dark:text-blue text-2xl text-shadow mr-4 pt-4 absolute right-0`}>
+      <h2 className={`${currentPage('/') ? 'hidden' : 'visible'} text-primary dark:text-blue text-2xl text-shadow mr-4 pt-4 absolute cursor-pointer right-0`} onClick={() => navigate('/')}>
         Joshua Nelson
       </h2>
       <div className="hidden lg:flex flex-col fixed top-[25%] gap-12 ml-1 sm:ml-4 z-40">
