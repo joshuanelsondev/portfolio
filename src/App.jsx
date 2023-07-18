@@ -32,7 +32,7 @@ function App() {
   }
  
   return (
-    <main className="h-full w-full bg-gradient-to-b from-[#dfe9f3] via-white to-[#dfe9f3] dark:bg-gradient-to-b dark:from-dark dark:via-primary dark:to-dark">
+    <main className="h-full w-full">
       <Router>
         {!errorPage && <Nav handleThemeChange={handleThemeChange} />}
         <Routes>
