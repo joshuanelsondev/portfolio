@@ -2,5 +2,9 @@
 import AboutMe from "../Components/AboutMe";
 
 export default function About() {
-    return <div><AboutMe /></div>;
+    return (
+      <div className="h-full w-full">
+        <AboutMe />
+      </div>
+    );
 }

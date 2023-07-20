@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       backgroundImage: {
-        headshot: "url(./src/assets/headshot.jpeg)",
+        headshot1: "url(./src/assets/headshot.jpeg)",
+        headshot2: "url(./src/assets/pursuit_headshot.png)",
+
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",
