@@ -25,7 +25,7 @@ function App() {
   useEffect(() => {
     applyTheme();
   }); 
-
+  
   const handleThemeChange = (theme) => {
     setTheme(theme);
     applyTheme();

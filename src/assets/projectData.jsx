@@ -89,7 +89,4 @@ const projectData = [
   },
 ];
 
-// eslint-disable-next-line no-undef
-module.exports = {
-    projectData
-}
+export { projectData };
