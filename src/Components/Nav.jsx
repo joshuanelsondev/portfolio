@@ -16,12 +16,12 @@ import {
 } from "react-icons/ai";
 
 export default function Nav({ handleThemeChange }) {
-  const [showNav, setShowNav] = useState(false);
+  const [showMiniNav, setShowMiniNav] = useState(false);
   const navigate = useNavigate();
   const location = useLocation();
 
   const toggleNav = () => {
-    setShowNav(!showNav);
+    setShowMiniNav(!showMiniNav);
   };
 
   const navAndToggle = (url) => {
@@ -123,7 +123,7 @@ export default function Nav({ handleThemeChange }) {
             size={20}
           />
         </div>
-        {showNav && (
+        {showMiniNav && (
           <div className="fixed top-9 ml-20 w-fit pr-4 z-30 h-fit bg-primary transition-transform duration-1000 ease-in-out transform translate-y-4 lg:hidden">
             <div
               className={`flex items-center gap-1 group cursor-pointer ${

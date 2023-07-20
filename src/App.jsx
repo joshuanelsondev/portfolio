@@ -20,7 +20,8 @@ import Nav from "./Components/Nav";
 
 
 function App() {
-  const [errorPage, setErrorPage] = useState(false);
+  // State for showing/hiding the nav. Hide nav when the Error page is active.
+  const [showNav, setShowNav] = useState(true);
 
   useEffect(() => {
     applyTheme();
@@ -34,20 +35,20 @@ function App() {
   return (
     <main className="h-screen w-full bg-fixed bg-gradient-to-b from-[#dfe9f3] via-white to-[#dfe9f3] dark:bg-gradient-to-b dark:from-dark dark:via-primary dark:to-dark">
       <Router>
-        {!errorPage && <Nav handleThemeChange={handleThemeChange} />}
+        {showNav && <Nav handleThemeChange={handleThemeChange} />}
         <Routes>
-          <Route path="/" element={<Home setErrorPage={setErrorPage} />} />
+          <Route path="/" element={<Home setShowNav={setShowNav} />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/projects"
-            element={<Index setErrorPage={setErrorPage} />}
+            element={<Index setShowNav={setShowNav} />}
           />
           <Route path="/projects/:id" element={<Show />} />
           <Route
             path="*"
             element={
-              <FourOFour errorPage={errorPage} setErrorPage={setErrorPage} />
+              <FourOFour setShowNav={setShowNav} />
             }
           />
         </Routes>

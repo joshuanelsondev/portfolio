@@ -1,5 +1,6 @@
 // Projects
 
+import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { MdLibraryAdd } from "react-icons/md";
@@ -7,12 +8,12 @@ import { projectData } from '../assets/projectData';
 import Project from './Project';
 
 
-export default function Projects() {
+export default function Projects({ setShowNav }) {
     const [projects, setProjects] = useState([]);
     useEffect(() => {
+        setShowNav(true);
         setProjects(projectData);
-        console.log(projects);
-    }, [projects])
+    }, [projects, setShowNav])
 
     return (
       <div className="flex flex-col items-center md:items-start">
@@ -38,3 +39,7 @@ export default function Projects() {
       </div>
     );
 }
+
+Projects.propTypes = {
+  setShowNav: PropTypes.func.isRequired,
+};

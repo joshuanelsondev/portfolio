@@ -9,10 +9,10 @@ import {
   AiFillFacebook,
 } from "react-icons/ai";
 
-export default function Home({ setErrorPage }) {
+export default function Home({ setShowNav }) {
     useEffect(() => {
-    setErrorPage(false);
-    }, [setErrorPage]);
+    setShowNav(true);
+    }, [setShowNav]);
 
     return (
       <div className="flex shrink-0 justify-center items-center h-full ">
@@ -100,5 +100,5 @@ export default function Home({ setErrorPage }) {
 
 
 Home.propTypes = {
-  setErrorPage: PropTypes.func.isRequired,
+  setShowNav: PropTypes.func.isRequired,
 };

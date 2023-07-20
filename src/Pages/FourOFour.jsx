@@ -7,7 +7,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { HiHomeModern, HiArrowLeftCircle } from "react-icons/hi2";
 
 
-export default function FourOFour({ errorPage, setErrorPage }) {
+export default function FourOFour({ setShowNav }) {
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -16,7 +16,7 @@ export default function FourOFour({ errorPage, setErrorPage }) {
   }, []);
 
   const toggleError = () => {
-    setErrorPage(!errorPage);
+    setShowNav(false);
   }
 
   return (
@@ -30,6 +30,5 @@ export default function FourOFour({ errorPage, setErrorPage }) {
 }
 
 FourOFour.propTypes = {
-  errorPage: PropTypes.bool.isRequired,
-  setErrorPage: PropTypes.func.isRequired,
+  setShowNav: PropTypes.func.isRequired,
 };
