@@ -1,21 +1,14 @@
 // ProjectDetails
 
-import { useState, useEffect } from "react";
-import { useParams, useNavigate } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { projectData } from "../assets/projectData";
 
 
 export default function ProjectDetails() {
-  const [project, setProject] = useState([]);
-  const { id } = useParams();
-  const navigate = useNavigate();
 
-  useEffect(() => {
-      let currentProject = projectData.find((project) => project.id === id);
-      setProject(currentProject);
-      console.log(currentProject)
-  }, [id, navigate]);
+  const { id } = useParams();
+  const project = projectData.find((project) => project.id === id);
 
   return (
     <div className="flex flex-col gap-10 p-10 bg-secondary  dark:bg-dark rounded-xl font-semibold shadow-xl shadow-primary">
@@ -26,7 +19,7 @@ export default function ProjectDetails() {
         <img
           src={project.image}
           alt={project.title}
-          className="rounded shadow-lg shadow-primary w-full h-auto"
+          className="rounded shadow-lg shadow-primary w-full h-auto text-blue"
         />
       </a>
       <p className="text-lg text-dark font-normal dark:text-blue leading-loose">
