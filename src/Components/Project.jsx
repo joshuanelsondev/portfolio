@@ -50,7 +50,7 @@ export default function Project({ project }) {
 }
 
 Project.propTypes = {
-    project: PropTypes.func.isRequired,
+    project: PropTypes.object.isRequired
 }
 
 

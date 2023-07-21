@@ -2,8 +2,6 @@
 
 import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import { MdLibraryAdd } from "react-icons/md";
 import { projectData } from '../assets/projectData';
 import Project from './Project';
 
