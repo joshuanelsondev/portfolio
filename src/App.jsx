@@ -33,7 +33,7 @@ function App() {
   }
  
   return (
-    <main className="h-screen w-full bg-fixed bg-gradient-to-b from-[#dfe9f3] via-white to-[#dfe9f3] dark:bg-gradient-to-b dark:from-dark dark:via-primary dark:to-dark">
+    <main className="h-screen w-full">
       <Router>
         {showNav && <Nav handleThemeChange={handleThemeChange} />}
         <Routes>
