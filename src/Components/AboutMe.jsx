@@ -5,9 +5,9 @@ export default function AboutMe() {
 
     return (
       <div>
-        <div className="flex mt-8">
+        <div className="flex pt-60">
           <div className="flex flex-col">
-            <h2 className="text-4xl text-primary dark:text-blue font-semibold mt-20">
+            <h2 className="text-4xl text-primary dark:text-blue font-semibold">
               Hey,&nbsp; I'm <span className="text-primary">Joshua</span>
             </h2>
             {/* <img
@@ -45,22 +45,22 @@ export default function AboutMe() {
                 Web Developer | Musician | Educator
               </p>
             </div>
-            {/* <img
+          </div>
+          <img
               src="./src/assets/headshot_grass.jpeg"
               alt="Headshot on grass with blurred background"
               className="h-96"
-            /> */}
-            {/* <img
+            />
+          {/* <img
               src="./src/assets/pursuit_headshot.jpg"
               alt="Headshot on grass with blurred background"
               className="h-[600px] w-auto"
             /> */}
-            {/* <img
+          {/* <img
               src="./src/assets/pursuit_headshot.png"
               alt="Headshot on grass with blurred background"
               className="h-[600px] w-auto rounded-2xl bg-secondary"
             /> */}
-          </div>
         </div>
       </div>
     );
