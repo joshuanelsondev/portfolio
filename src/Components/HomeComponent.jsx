@@ -15,18 +15,18 @@ export default function HomeComponent({ setShowNav }) {
     }, [setShowNav]);
 
     return (
-      <div id="home" className="flex shrink-0 items-center h-screen w-auto">
-        {/* <img
-          src="./src/assets/headshot.jpeg"
+      <div id="home" className="flex flex-col shrink-0 justify-center items-center gap-10 h-screen w-auto">
+        <img
+          src="./src/assets/pursuit_headshot.png"
           alt="Headshot on grass with blurred background"
-          className="h-screen w-auto"
-        /> */}
-        <div className="w-96 xl:w-9/12 h-auto text-right z-10">
-          <h1 className="text-6xl xl:text-8xl text-primary dark:text-blue font-semibold text-shadow">
+          className="h-[200px] w-auto rounded-full bg-primary"
+        />
+        <div className="flex flex-col gap-4 w-96 xl:w-9/12 h-auto z-10 text-center">
+          <h1 className="text-6xl xl:text-8xl text-primary dark:text-gray font-semibold">
             Joshua Nelson
           </h1>
-          <h2 className="text-3xl mt-2 font-semibold text-dark dark:text-dark">
-            <span className="text-primary dark:text-blue">Full Stack</span>{" "}
+          <h2 className="text-3xl mt-2 font-semibold text-black dark:text-primary">
+            <span className="text-primary dark:text-gray">Web</span>{" "}
             Developer
           </h2>
           <div className="flex mt-4 gap-8 justify-center">
@@ -38,11 +38,11 @@ export default function HomeComponent({ setShowNav }) {
                 rel="noreferrer"
               >
                 <AiFillLinkedin
-                  className="p-2 text-primary dark:text-blue cursor-pointer hover:bg-secondary hover:dark:bg-dark  rounded-full"
+                  className="p-2 text-primary dark:text-gray cursor-pointer hover:bg-secondary hover:dark:bg-dark  rounded-full"
                   size={40}
                 />
               </a>
-              <p className="text-primary dark:text-blue font-semibold invisible peer-hover:visible">
+              <p className="text-primary dark:text-gray font-semibold invisible peer-hover:visible">
                 LinkedIn
               </p>
             </div>
@@ -55,11 +55,11 @@ export default function HomeComponent({ setShowNav }) {
                 rel="noreferrer"
               >
                 <AiOutlineGithub
-                  className="p-2 text-primary hover:bg-secondary hover:dark:bg-dark dark:text-blue cursor-pointer  rounded-full"
+                  className="p-2 text-primary hover:bg-secondary hover:dark:bg-dark dark:text-gray cursor-pointer  rounded-full"
                   size={40}
                 />
               </a>
-              <p className="text-primary dark:text-blue font-semibold invisible peer-hover:visible">
+              <p className="text-primary dark:text-gray font-semibold invisible peer-hover:visible">
                 GitHub
               </p>
             </div>
@@ -72,11 +72,11 @@ export default function HomeComponent({ setShowNav }) {
                 rel="noreferrer"
               >
                 <AiFillFacebook
-                  className="p-2 text-primary dark:text-blue cursor-pointer hover:bg-secondary hover:dark:bg-dark  rounded-full"
+                  className="p-2 text-primary dark:text-gray cursor-pointer hover:bg-secondary hover:dark:bg-dark  rounded-full"
                   size={40}
                 />
               </a>
-              <p className="text-primary dark:text-blue font-semibold invisible peer-hover:visible">
+              <p className="text-primary dark:text-gray font-semibold invisible peer-hover:visible">
                 Facebook
               </p>
             </div>
@@ -89,11 +89,11 @@ export default function HomeComponent({ setShowNav }) {
                 rel="noreferrer"
               >
                 <AiFillInstagram
-                  className="p-2 text-primary dark:text-blue cursor-pointer hover:bg-secondary hover:dark:bg-dark  rounded-full"
+                  className="p-2 text-primary dark:text-gray cursor-pointer hover:bg-secondary hover:dark:bg-dark  rounded-full"
                   size={40}
                 />
               </a>
-              <p className="text-primary dark:text-blue font-semibold invisible peer-hover:visible">
+              <p className="text-primary dark:text-gray font-semibold invisible peer-hover:visible">
                 Instagram
               </p>
             </div>
@@ -105,11 +105,6 @@ export default function HomeComponent({ setShowNav }) {
           alt="Headshot on grass with blurred background"
           className="h-[600px] w-auto"
         /> */}
-        <img
-          src="./src/assets/pursuit_headshot.png"
-          alt="Headshot on grass with blurred background"
-          className="h-[600px] w-auto rounded-full bg-primary"
-        />
       </div>
     );
 }
