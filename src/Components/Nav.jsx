@@ -36,20 +36,25 @@ export default function Nav({ handleThemeChange }) {
 
   return (
     <div>
-      <h2 className={`${currentPage('/') ? 'hidden' : 'visible'} text-primary dark:text-blue text-2xl text-shadow mr-4 pt-4 absolute cursor-pointer right-0`} onClick={() => navigate('/')}>
+      <h2
+        className={`${
+          currentPage("/") ? "hidden" : "visible"
+        } text-primary dark:text-gray text-2xl mr-4 pt-4 absolute cursor-pointer right-0`}
+        onClick={() => navigate("/")}
+      >
         Joshua Nelson
       </h2>
       <div className="hidden lg:flex flex-col fixed top-[25%] gap-12 ml-1 sm:ml-4 z-40">
         <div className="flex items-center lg:gap-4 md:gap-1">
           <MdHome
             onClick={() => navigate("/")}
-            className={`peer text-primary hover:bg-secondary dark:text-blue dark:hover:bg-dark rounded-full p-2 cursor-pointer ${
-              currentPage("/") && "bg-secondary dark:bg-dark"
+            className={`peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer ${
+              currentPage("/") && "outline dark:outline"
             }`}
             size={40}
           />
           <p
-            className="invisible text-primary dark:text-blue font-semibold peer-hover:visible"
+            className="invisible text-primary dark:text-primary font-semibold peer-hover:visible"
             onClick={() => toggleNav()}
           >
             Home
@@ -58,36 +63,36 @@ export default function Nav({ handleThemeChange }) {
         <div className="flex items-center lg:gap-4 md:gap-1">
           <MdAccountCircle
             onClick={() => navigate("/about")}
-            className={`peer text-primary dark:text-blue hover:bg-secondary dark:hover:bg-dark rounded-full p-2 cursor-pointer ${
-              currentPage("/about") && "bg-secondary dark:bg-dark"
+            className={`peer text-primary dark:text-gray hover:outline hover:dark:outline-primary rounded-full p-2 cursor-pointer ${
+              currentPage("/about") && "outline dark:outline"
             }`}
             size={40}
           />
-          <p className="invisible text-primary dark:text-blue font-semibold peer-hover:visible">
+          <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             About
           </p>
         </div>
         <div className="flex items-center lg:gap-4 md:gap-1">
           <AiOutlineAppstore
             onClick={() => navigate("/projects")}
-            className={`peer text-primary dark:text-blue hover:bg-secondary dark:hover:bg-dark p-[8px] rounded-full cursor-pointer ${
-              currentPage("/projects") && "bg-secondary dark:bg-dark"
+            className={`peer text-primary dark:text-gray hover:outline hover:dark:outline-primary p-[8px] rounded-full cursor-pointer ${
+              currentPage("/projects") && "outline dark:outline"
             }`}
             size={40}
           />
-          <p className="invisible text-primary dark:text-blue font-semibold peer-hover:visible">
+          <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             Portfolio
           </p>
         </div>
         <div className="flex items-center lg:gap-4 md:gap-1">
           <MdEmail
             onClick={() => navigate("/contact")}
-            className={`peer text-primary dark:text-blue hover:bg-secondary dark:hover:bg-dark rounded-full p-2 cursor-pointer ${
-              currentPage("/contact") && "bg-secondary dark:bg-dark"
+            className={`peer text-primary dark:text-gray hover:outline hover:dark:outline-primary rounded-full p-2 cursor-pointer ${
+              currentPage("/contact") && "outline dark:outline"
             }`}
             size={40}
           />
-          <p className="invisible text-primary dark:text-blue font-semibold peer-hover:visible">
+          <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             Contact
           </p>
         </div>
@@ -96,17 +101,17 @@ export default function Nav({ handleThemeChange }) {
           <div className="absolute invisible dark:visible flex items-center lg:gap-4 md:gap-1">
             <MdOutlineDarkMode
               onClick={() => handleThemeChange("dark")}
-              className="peer text-blue hover:bg-dark rounded-full p-2 cursor-pointer"
+              className="peer text-gray hover:outline hover:dark:outline-primary rounded-full p-2 cursor-pointer"
               size={40}
             />
-            <p className="invisible text-blue font-semibold peer-hover:visible">
+            <p className="invisible text-primary font-semibold peer-hover:visible">
               Dark
             </p>
           </div>
           <div className="absolute dark:invisible flex items-center lg:gap-4 md:gap-1">
             <MdOutlineLightMode
               onClick={() => handleThemeChange("light")}
-              className="peer text-primary hover:bg-secondary rounded-full p-2 cursor-pointer"
+              className="peer text-primary hover:outline  rounded-full p-2 cursor-pointer"
               size={40}
             />
             <p className="invisible text-primary font-semibold peer-hover:visible">
@@ -115,12 +120,12 @@ export default function Nav({ handleThemeChange }) {
           </div>
         </div>
       </div>
-      <div className="h-10 w-10 flex justify-center fixed top-6 left-4">
+      <div className="h-10 w-10 flex justify-center fixed top-10 left-8">
         <div className="z-10 lg:hidden">
           <AiOutlineMenu
             onClick={toggleNav}
-            className="text-primary dark:text-secondary transition-colors duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
-            size={20}
+            className="text-primary dark:text-primary transition-colors duration-300 ease-in-out transform hover:scale-110 cursor-pointer"
+            size={24}
           />
         </div>
         {showMiniNav && (
