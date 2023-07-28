@@ -16,7 +16,6 @@ export default function HomeComponent({ setShowNav }) {
 
     return (
       <div
-        id="home"
         className="flex flex-col shrink-0 justify-center items-center gap-10 h-screen w-auto"
       >
         <img

@@ -13,9 +13,9 @@ export default function Home({ setShowNav }) {
     }, [setShowNav]);
 
     return (
-      <div className="h-full w-full px-24">
+      <div id="home" className="h-full w-full px-24">
           <HomeComponent setShowNav={setShowNav} />
-          <About />
+          <About  />
           <Index setShowNav={setShowNav} />
           <Contact />
       </div>

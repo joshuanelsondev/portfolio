@@ -15,7 +15,7 @@ export default function Projects({ setShowNav }) {
 
     return (
       <div className="flex flex-col items-center md:items-start">
-        <h1 className="text-5xl text-primary dark:text-blue font-semibold mt-20">Portfolio</h1>
+        <h1 className="text-5xl text-primary font-semibold mt-20">Portfolio</h1>
           <div>
             {projects.map((project) => (
               <div key={project.id} className="flex justify-start">

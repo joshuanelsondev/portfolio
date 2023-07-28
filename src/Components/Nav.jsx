@@ -3,6 +3,7 @@
 import PropTypes from "prop-types";
 import { useState } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 import {
   MdAccountCircle,
   MdHome,
@@ -45,7 +46,15 @@ export default function Nav({ handleThemeChange }) {
         Joshua Nelson
       </h2>
       <div className="hidden lg:flex flex-col fixed top-[25%] gap-12 ml-1 sm:ml-4 z-40">
-        <div className="flex items-center lg:gap-4 md:gap-1">
+        <LinkScroll
+          className="flex items-center lg:gap-4 md:gap-1"
+          activeClass="active"
+          to="home"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
           <MdHome
             onClick={() => navigate("/")}
             className={`peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer ${
@@ -59,10 +68,17 @@ export default function Nav({ handleThemeChange }) {
           >
             Home
           </p>
-        </div>
-        <div className="flex items-center lg:gap-4 md:gap-1">
+        </LinkScroll>
+        <LinkScroll
+          className="flex items-center lg:gap-4 md:gap-1"
+          activeClass="active"
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
           <MdAccountCircle
-            onClick={() => navigate("/about")}
             className={`peer text-primary dark:text-gray hover:outline hover:dark:outline-primary rounded-full p-2 cursor-pointer ${
               currentPage("/about") && "outline dark:outline"
             }`}
@@ -71,10 +87,17 @@ export default function Nav({ handleThemeChange }) {
           <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             About
           </p>
-        </div>
-        <div className="flex items-center lg:gap-4 md:gap-1">
+        </LinkScroll>
+        <LinkScroll
+          className="flex items-center lg:gap-4 md:gap-1"
+          activeClass="active"
+          to="projects"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
           <AiOutlineAppstore
-            onClick={() => navigate("/projects")}
             className={`peer text-primary dark:text-gray hover:outline hover:dark:outline-primary p-[8px] rounded-full cursor-pointer ${
               currentPage("/projects") && "outline dark:outline"
             }`}
@@ -83,10 +106,17 @@ export default function Nav({ handleThemeChange }) {
           <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             Portfolio
           </p>
-        </div>
-        <div className="flex items-center lg:gap-4 md:gap-1">
+        </LinkScroll>
+        <LinkScroll
+          className="flex items-center lg:gap-4 md:gap-1"
+          activeClass="active"
+          to="contact"
+          spy={true}
+          smooth={true}
+          offset={0}
+          duration={500}
+        >
           <MdEmail
-            onClick={() => navigate("/contact")}
             className={`peer text-primary dark:text-gray hover:outline hover:dark:outline-primary rounded-full p-2 cursor-pointer ${
               currentPage("/contact") && "outline dark:outline"
             }`}
@@ -95,7 +125,7 @@ export default function Nav({ handleThemeChange }) {
           <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             Contact
           </p>
-        </div>
+        </LinkScroll>
 
         <div className="relative">
           <div className="absolute invisible dark:visible flex items-center lg:gap-4 md:gap-1">

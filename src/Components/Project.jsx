@@ -6,7 +6,7 @@ import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 
 export default function Project({ project }) {
   return (
-    <div className="min-h-96 w-full mt-10 p-8 gap-4 bg-secondary dark:bg-dark flex flex-col items-start z-10 rounded-3xl hover:shadow-lg hover:shadow-primary hover:dark:shadow-blue">
+    <div className="min-h-96 w-full mt-10 p-8 gap-4 bg-secondary dark:bg-secondary flex flex-col items-start z-10 rounded-3xl hover:shadow-lg hover:shadow-primary hover:dark:shadow-blue">
       <div>
         <div className="flex gap-4">
           <a
