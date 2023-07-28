@@ -9,10 +9,10 @@ import { applyTheme, setTheme } from "./Theme";
 // PAGES
 import FourOFour from "./Pages/FourOFour";
 import Home from "./Pages/Home";
-import Index from "./Pages/Index";
+// import Index from "./Pages/Index";
 import Show from "./Pages/Show";
-import About from "./Pages/About";
-import Contact from "./Pages/Contact";
+// import About from "./Pages/About";
+// import Contact from "./Pages/Contact";
 
 
 // COMPONENTS
@@ -38,9 +38,9 @@ function App() {
         {showNav && <Nav handleThemeChange={handleThemeChange} />}
         <Routes>
           <Route path="/" element={<Home setShowNav={setShowNav} />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/projects" element={<Index setShowNav={setShowNav} />} />
+          {/* <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} /> */}
+          {/* <Route path="/projects" element={<Index setShowNav={setShowNav} />} /> */}
           <Route path="/projects/:id" element={<Show />} />
           <Route path={"*"} element={<FourOFour setShowNav={setShowNav} />} />
         </Routes>

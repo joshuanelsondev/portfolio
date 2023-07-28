@@ -18,6 +18,7 @@ import {
 
 export default function Nav({ handleThemeChange }) {
   const [showMiniNav, setShowMiniNav] = useState(false);
+  const [activeNavItem, setActiveNavItem] = useState("home");
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -34,9 +35,13 @@ export default function Nav({ handleThemeChange }) {
     return location.pathname === path;
   };
 
+  const handleNavItemClick = (itemId) => {
+    setActiveNavItem(itemId);
+  }
 
   return (
     <div>
+      {/* Clickable logo to return to home page */}
       <h2
         className={`${
           currentPage("/") ? "hidden" : "visible"
@@ -46,9 +51,10 @@ export default function Nav({ handleThemeChange }) {
         Joshua Nelson
       </h2>
       <div className="hidden lg:flex flex-col fixed top-[25%] gap-12 ml-1 sm:ml-4 z-40">
+        {/* Home nav button */}
         <LinkScroll
-          className="flex items-center lg:gap-4 md:gap-1"
-          activeClass="active"
+          className={`flex items-center lg:gap-4 md:gap-1 `}
+          activeClass={activeNavItem === "home" ? "active" : ""}
           to="home"
           spy={true}
           smooth={true}
@@ -56,22 +62,20 @@ export default function Nav({ handleThemeChange }) {
           duration={500}
         >
           <MdHome
-            onClick={() => navigate("/")}
-            className={`peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer ${
-              currentPage("/") && "outline dark:outline"
-            }`}
+            className={`peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary ${
+              activeNavItem === "home" ? "outline dark:outline" : ""
+            } p-2 cursor-pointer `}
             size={40}
+            onClick={() => handleNavItemClick("home")}
           />
-          <p
-            className="invisible text-primary dark:text-primary font-semibold peer-hover:visible"
-            onClick={() => toggleNav()}
-          >
+          <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             Home
           </p>
         </LinkScroll>
+        {/* About nav button */}
         <LinkScroll
-          className="flex items-center lg:gap-4 md:gap-1"
-          activeClass="active"
+          className={`flex items-center lg:gap-4 md:gap-1`}
+          activeClass={activeNavItem === "about" ? "active" : ""}
           to="about"
           spy={true}
           smooth={true}
@@ -80,17 +84,19 @@ export default function Nav({ handleThemeChange }) {
         >
           <MdAccountCircle
             className={`peer text-primary dark:text-gray hover:outline hover:dark:outline-primary rounded-full p-2 cursor-pointer ${
-              currentPage("/about") && "outline dark:outline"
+              activeNavItem === "about" ? "outline dark:outline" : ""
             }`}
             size={40}
+            onClick={() => handleNavItemClick("about")}
           />
           <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             About
           </p>
         </LinkScroll>
+        {/* Portfolio nav button */}
         <LinkScroll
-          className="flex items-center lg:gap-4 md:gap-1"
-          activeClass="active"
+          className={`flex items-center lg:gap-4 md:gap-1`}
+          activeClass={activeNavItem === "projects" ? "active" : ""}
           to="projects"
           spy={true}
           smooth={true}
@@ -99,17 +105,19 @@ export default function Nav({ handleThemeChange }) {
         >
           <AiOutlineAppstore
             className={`peer text-primary dark:text-gray hover:outline hover:dark:outline-primary p-[8px] rounded-full cursor-pointer ${
-              currentPage("/projects") && "outline dark:outline"
+              activeNavItem === "projects" ? "outline dark:outline" : ""
             }`}
             size={40}
+            onClick={() => handleNavItemClick("projects")}
           />
           <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             Portfolio
           </p>
         </LinkScroll>
+        {/* Contact nav button */}
         <LinkScroll
-          className="flex items-center lg:gap-4 md:gap-1"
-          activeClass="active"
+          className={`flex items-center lg:gap-4 md:gap-1`}
+          activeClass={activeNavItem === "contact" ? "active" : ""}
           to="contact"
           spy={true}
           smooth={true}
@@ -118,9 +126,10 @@ export default function Nav({ handleThemeChange }) {
         >
           <MdEmail
             className={`peer text-primary dark:text-gray hover:outline hover:dark:outline-primary rounded-full p-2 cursor-pointer ${
-              currentPage("/contact") && "outline dark:outline"
+              activeNavItem === "contact" ? "outline dark:outline" : ""
             }`}
             size={40}
+            onClick={() => handleNavItemClick("contact")}
           />
           <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             Contact
@@ -128,6 +137,7 @@ export default function Nav({ handleThemeChange }) {
         </LinkScroll>
 
         <div className="relative">
+          {/* Dark theme nav button */}
           <div className="absolute invisible dark:visible flex items-center lg:gap-4 md:gap-1">
             <MdOutlineDarkMode
               onClick={() => handleThemeChange("dark")}
@@ -138,6 +148,7 @@ export default function Nav({ handleThemeChange }) {
               Dark
             </p>
           </div>
+          {/* Light theme nav button */}
           <div className="absolute dark:invisible flex items-center lg:gap-4 md:gap-1">
             <MdOutlineLightMode
               onClick={() => handleThemeChange("light")}
@@ -150,6 +161,7 @@ export default function Nav({ handleThemeChange }) {
           </div>
         </div>
       </div>
+      {/* Hamburger Menu */}
       <div className="h-10 w-10 flex justify-center fixed top-10 left-8">
         <div className="z-10 lg:hidden">
           <AiOutlineMenu
@@ -158,6 +170,7 @@ export default function Nav({ handleThemeChange }) {
             size={24}
           />
         </div>
+        {/* Smaller screen nav bar */}
         {showMiniNav && (
           <div className="fixed top-9 ml-20 w-fit pr-4 z-30 h-fit bg-primary transition-transform duration-1000 ease-in-out transform translate-y-4 lg:hidden">
             <div
