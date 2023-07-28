@@ -52,89 +52,86 @@ export default function Nav({ handleThemeChange }) {
       </h2>
       <div className="hidden lg:flex flex-col fixed top-[25%] gap-12 ml-1 sm:ml-4 z-40">
         {/* Home nav button */}
-        <LinkScroll
-          className={`flex items-center lg:gap-4 md:gap-1 `}
-          activeClass={activeNavItem === "home" ? "active" : ""}
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <MdHome
-            className={`peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary ${
-              activeNavItem === "home" ? "outline dark:outline" : ""
-            } p-2 cursor-pointer `}
-            size={40}
-            onClick={() => handleNavItemClick("home")}
-          />
+        <div className="flex items-center lg:gap-4 md:gap-1">
+          <LinkScroll
+            activeClass="outline rounded-full text-primary"
+            to="home"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <MdHome
+              className="peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
+              size={40}
+              onClick={() => handleNavItemClick("home")}
+            />
+          </LinkScroll>
           <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             Home
           </p>
-        </LinkScroll>
+        </div>
+
         {/* About nav button */}
-        <LinkScroll
-          className={`flex items-center lg:gap-4 md:gap-1`}
-          activeClass={activeNavItem === "about" ? "active" : ""}
-          to="about"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <MdAccountCircle
-            className={`peer text-primary dark:text-gray hover:outline hover:dark:outline-primary rounded-full p-2 cursor-pointer ${
-              activeNavItem === "about" ? "outline dark:outline" : ""
-            }`}
-            size={40}
-            onClick={() => handleNavItemClick("about")}
-          />
+        <div className="flex items-center lg:gap-4 md:gap-1">
+          <LinkScroll
+            activeClass="outline rounded-full text-primary"
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <MdAccountCircle
+              className="peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
+              size={40}
+              onClick={() => handleNavItemClick("about")}
+            />
+          </LinkScroll>
           <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             About
           </p>
-        </LinkScroll>
+        </div>
         {/* Portfolio nav button */}
-        <LinkScroll
-          className={`flex items-center lg:gap-4 md:gap-1`}
-          activeClass={activeNavItem === "projects" ? "active" : ""}
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <AiOutlineAppstore
-            className={`peer text-primary dark:text-gray hover:outline hover:dark:outline-primary p-[8px] rounded-full cursor-pointer ${
-              activeNavItem === "projects" ? "outline dark:outline" : ""
-            }`}
-            size={40}
-            onClick={() => handleNavItemClick("projects")}
-          />
+        <div className="flex items-center lg:gap-4 md:gap-1">
+          <LinkScroll
+            activeClass="outline rounded-full text-primary"
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <AiOutlineAppstore
+              className="peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
+              size={40}
+              onClick={() => handleNavItemClick("projects")}
+            />
+          </LinkScroll>
           <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             Portfolio
           </p>
-        </LinkScroll>
+        </div>
         {/* Contact nav button */}
-        <LinkScroll
-          className={`flex items-center lg:gap-4 md:gap-1`}
-          activeClass={activeNavItem === "contact" ? "active" : ""}
-          to="contact"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <MdEmail
-            className={`peer text-primary dark:text-gray hover:outline hover:dark:outline-primary rounded-full p-2 cursor-pointer ${
-              activeNavItem === "contact" ? "outline dark:outline" : ""
-            }`}
-            size={40}
-            onClick={() => handleNavItemClick("contact")}
-          />
+        <div className="flex items-center lg:gap-4 md:gap-1">
+          <LinkScroll
+            activeClass="outline rounded-full text-primary"
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={0}
+            duration={500}
+          >
+            <MdEmail
+              className="peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
+              size={40}
+              onClick={() => handleNavItemClick("contact")}
+            />
+          </LinkScroll>
           <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
             Contact
           </p>
-        </LinkScroll>
+        </div>
 
         <div className="relative">
           {/* Dark theme nav button */}
