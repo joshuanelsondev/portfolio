@@ -3,7 +3,7 @@ import AboutMe from "../Components/AboutMe";
 
 export default function About() {
     return (
-      <div id="about" className="mx-4 pb-10 sm:mx-8 md:mx-48 xl:mx-52 2xl:mx-72">
+      <div id="about" className="p-4">
         <AboutMe />
       </div>
     );
