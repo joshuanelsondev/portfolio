@@ -18,7 +18,7 @@ import {
 
 export default function Nav({ handleThemeChange }) {
   const [showMiniNav, setShowMiniNav] = useState(false);
-  const [activeNavItem, setActiveNavItem] = useState("home");
+  // const [activeNavItem, setActiveNavItem] = useState("home");
   const navigate = useNavigate();
   const location = useLocation();
 
@@ -54,6 +54,7 @@ export default function Nav({ handleThemeChange }) {
         {/* Home nav button */}
         <div className="flex items-center lg:gap-4 md:gap-1">
           <LinkScroll
+            className="peer"
             activeClass="outline rounded-full text-primary"
             to="home"
             spy={true}
@@ -62,7 +63,7 @@ export default function Nav({ handleThemeChange }) {
             duration={500}
           >
             <MdHome
-              className="peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
+              className="text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
               size={40}
               onClick={() => handleNavItemClick("home")}
             />
@@ -75,6 +76,7 @@ export default function Nav({ handleThemeChange }) {
         {/* About nav button */}
         <div className="flex items-center lg:gap-4 md:gap-1">
           <LinkScroll
+            className="peer"
             activeClass="outline rounded-full text-primary"
             to="about"
             spy={true}
@@ -83,7 +85,7 @@ export default function Nav({ handleThemeChange }) {
             duration={500}
           >
             <MdAccountCircle
-              className="peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
+              className="text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
               size={40}
               onClick={() => handleNavItemClick("about")}
             />
@@ -95,6 +97,7 @@ export default function Nav({ handleThemeChange }) {
         {/* Portfolio nav button */}
         <div className="flex items-center lg:gap-4 md:gap-1">
           <LinkScroll
+            className="peer"
             activeClass="outline rounded-full text-primary"
             to="projects"
             spy={true}
@@ -103,7 +106,7 @@ export default function Nav({ handleThemeChange }) {
             duration={500}
           >
             <AiOutlineAppstore
-              className="peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
+              className="text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
               size={40}
               onClick={() => handleNavItemClick("projects")}
             />
@@ -115,6 +118,7 @@ export default function Nav({ handleThemeChange }) {
         {/* Contact nav button */}
         <div className="flex items-center lg:gap-4 md:gap-1">
           <LinkScroll
+            className="peer"
             activeClass="outline rounded-full text-primary"
             to="contact"
             spy={true}
@@ -123,7 +127,7 @@ export default function Nav({ handleThemeChange }) {
             duration={500}
           >
             <MdEmail
-              className="peer text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
+              className="text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
               size={40}
               onClick={() => handleNavItemClick("contact")}
             />
