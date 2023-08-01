@@ -16,7 +16,7 @@ export default function HomeComponent({ setShowNav }) {
 
     return (
       <div
-        className="flex flex-col shrink-0 justify-start mt-20 items-center gap-10 h-screen w-auto z-10"
+        className="flex flex-col shrink-0 justify-start pt-40 lg:pt-20 items-center gap-10 h-screen sm:w-screen lg:w-auto z-10"
       >
         <img
           src="./src/assets/pursuit_headshot.png"
