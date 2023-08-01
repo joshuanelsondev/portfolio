@@ -2,7 +2,6 @@
 
 import PropTypes from "prop-types";
 import { useState } from "react";
-import { useNavigate, useLocation } from "react-router-dom";
 import { Link as LinkScroll } from "react-scroll";
 import { v4 as generateId } from "uuid";
 import {
@@ -30,19 +29,10 @@ const navIcons = [
 
 export default function Nav({ handleThemeChange }) {
   const [showNav, setShowNav] = useState(false);
-  // const [activeNavItem, setActiveNavItem] = useState("home");
-  const navigate = useNavigate();
-  const location = useLocation();
 
   const toggleNav = () => {
     setShowNav(!showNav);
   };
-
-
-  const currentPage = (path) => {
-    return location.pathname === path;
-  };
-
 
   return (
     <div>
@@ -157,7 +147,7 @@ export default function Nav({ handleThemeChange }) {
               <div className="absolute invisible dark:visible flex flex-col items-center left-5">
                 <MdOutlineDarkMode
                   onClick={() => handleThemeChange("dark")}
-                  className="peer text-gray hover:outline hover:dark:outline-primary rounded-full p-2 cursor-pointer"
+                  className="peer text-gray hover:outline hover:dark:outline-gray rounded-full p-2 cursor-pointer"
                   size={40}
                 />
               </div>
@@ -165,7 +155,7 @@ export default function Nav({ handleThemeChange }) {
               <div className="absolute dark:invisible flex flex-col items-center left-5">
                 <MdOutlineLightMode
                   onClick={() => handleThemeChange("light")}
-                  className="peer text-gray hover:outline outline-primary rounded-full p-2 cursor-pointer"
+                  className="peer text-gray hover:outline outline-gray rounded-full p-2 cursor-pointer"
                   size={40}
                 />
               </div>
