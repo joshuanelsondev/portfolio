@@ -16,18 +16,18 @@ export default function HomeComponent({ setShowNav }) {
 
     return (
       <div
-        className="flex flex-col shrink-0 justify-start pt-40 lg:pt-20 items-center gap-10 h-full sm:w-screen lg:w-auto z-10"
+        className="flex flex-col shrink-0 justify-start pt-40 items-center gap-10 h-full sm:w-screen lg:w-auto z-10"
       >
         <img
           src="./src/assets/pursuit_headshot.png"
           alt="Headshot with green background"
-          className="h-[300px] min-w-[300px] rounded-full bg-primary dark:bg-gray shadow-md shadow-primary"
+          className="h-40 lg:h-[300px] min-w-[100px] rounded-full bg-primary dark:bg-gray shadow-md shadow-primary"
         />
         <div className="flex flex-col gap-4 w-96 xl:w-9/12 h-auto z-10 text-center">
-          <h1 className="text-6xl xl:text-6xl text-primary dark:text-gray font-semibold">
+          <h1 className="text-4xl xl:text-6xl text-primary dark:text-gray font-semibold">
             Joshua Nelson
           </h1>
-          <h2 className="text-3xl mt-2 font-semibold text-black dark:text-primary">
+          <h2 className="text-2xl mt-2 font-semibold text-black dark:text-primary">
             <span className="text-primary dark:text-gray">Web</span> Developer
           </h2>
           <div className="flex mt-4 gap-8 justify-center">
