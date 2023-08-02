@@ -38,7 +38,7 @@ const projectData = [
       "Node.js",
     ],
     image:
-      "https://github.com/joshuanelsondev/table-frontend-project/raw/main/src/images/IndexScreenshot.png",
+      "https://github.com/joshuanelsondev/table-frontend-project/blob/main/src/images/IndexScreenshot.png?raw=true",
     github_link: "https://github.com/joshuanelsondev/table-frontend-project",
     demo_link: "https://thetable-app.netlify.app/",
     is_favorite: true,
@@ -66,7 +66,7 @@ const projectData = [
       'A project from the Odin Project site where I created a sign-up-form. I used the Hero page design and worked on media queries to make my page responsive. I also used"JavaScript"for the form validation',
     tech: ["JavaScript", "HTML", "CSS"],
     image:
-      "https://github.com/joshuanelsondev/sign-up-form/raw/main/images/Screenshot.png",
+      "https://github.com/joshuanelsondev/sign-up-form/blob/main/images/sign-up-form-screenshot.png?raw=true",
     github_link: "https://github.com/joshuanelsondev/sign-up-form",
     demo_link: "https://joshuanelsondev.github.io/sign-up-form/",
     is_favorite: true,
