@@ -80,7 +80,7 @@ const projectData = [
       'A personal project I took on through the Odin Project that focused on incorporating user-interaction in a sketch-style environment. I was challenged to use"JavaScript"in a way that would simulate a pen traveling across an etch-a-sketch board.',
     tech: ["JavaScript", "HTML", "CSS"],
     image:
-      "https://github.com/joshuanelsondev/etch-a-sketch/raw/main/images/Screenshot.png",
+      "https://github.com/joshuanelsondev/etch-a-sketch/blob/main/images/etch-a-sketch.png?raw=true",
     github_link: "https://github.com/joshuanelsondev/etch-a-sketch",
     demo_link: "https://joshuanelsondev.github.io/etch-a-sketch/",
     is_favorite: false,
