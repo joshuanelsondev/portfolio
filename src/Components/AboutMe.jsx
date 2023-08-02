@@ -1,26 +1,40 @@
 /* eslint-disable react/no-unescaped-entities */
 // AboutMe.jsx
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 export default function AboutMe() {
+    // State for showing the image
+    const [ showImg, setShowImg ] = useState(true);
+    // Function to toggle the showImg state
+    const toggleImg = () => {
+      setShowImg(!showImg);
+    };
 
     return (
-      <div className="flex flex-col md:flex-row border border-primary ">
-        <div className="flex flex-col">
-          <div className="text-lg text-black dark:text-gray rounded-lg">
-            <h2 className="text-4xl text-primary dark:text-gray font-semibold">
-              Hi, I'm <span className="text-primary">Joshua</span>
-            </h2>
-            <br />
-            <p>
-              Thank you for taking the time to visit my page.
-              I'm currently a developer and saxophonist that loves
-              to express my creativity through code and music. Within the past
-              year I've been able to grow as a developer during my time as a
-              fellow at <Link to={"https://www.pursuit.org/"} className="text-primary font-bold hover:underline underline-offset-2" target="_blank">Pursuit</Link>.
-              Learning from others and connecting with people from diverse backgrounds... 
-
-
+      <div className="flex flex-col items-center lg:flex-row lg:justify-evenly pt-20 gap-8">
+        {/* Header and Bio container */}
+        <div className="text-lg text-black dark:text-gray rounded-lg max-w-[600px]">
+          {/* Header */}
+          <h2 className="text-4xl text-primary dark:text-gray font-semibold">
+            Hi, I'm <span className="text-primary">Joshua</span>
+          </h2>
+          <br />
+          {/* Bio text */}
+          <p>
+            Thank you for visiting my page. I'm currently a developer and
+            saxophonist that loves to express my creativity through code and
+            music. Within the past year I've been able to grow as a developer
+            during my time as a fellow at{" "}
+            <Link
+              to={"https://www.pursuit.org/hire-from-pursuit"}
+              className="text-primary font-bold hover:underline underline-offset-2"
+              target="_blank"
+            >
+              Pursuit
+            </Link>
+            . Learning from others and connecting with people from diverse
+            backgrounds...
             {/*           
               I'm a web developer and current fellow in the Pursuit software
               engineering fellowship. I'm passionate about problem-solving,
@@ -36,17 +50,30 @@ export default function AboutMe() {
               knowledge through teaching privately. Explore my website to see my
               latest projects and join me in creating meaningful digital
               solutions. Let's build something amazing together! Joshua Nelson */}
-            </p>
-            <p className="text-primary font-semibold">
-              Web Developer | Musician | Educator
-            </p>
-          </div>
+          </p>
+          <p className="text-primary font-semibold mt-4">
+            Web Developer | Musician | Educator
+          </p>
         </div>
-        <img
-          src="./src/assets/headshot_grass.jpeg"
-          alt="Headshot on grass with blurred background"
-          className="h-[600px] w-auto"
-        />
+        {/* Images to toggle between */}
+        <div className="relative max-h-[600px] max-w-[300px]">
+          <img
+            src="./src/assets/headshot_grass.jpeg"
+            alt="Headshot on grass with blurred background"
+            className={`h-auto w-auto max-h-[400px] max-w-[300px] cursor-pointer drop-shadow-2xl ${
+              !showImg && "hidden"
+            }`}
+            onClick={toggleImg}
+          />
+          <img
+            src="./src/assets/Press6.jpeg"
+            alt="Joshua standing against a black wall holding a saxophone"
+            className={`h-auto w-auto max-h-[400px] max-w-[300px] cursor-pointer drop-shadow-2xl ${
+              showImg && "hidden"
+            }`}
+            onClick={toggleImg}
+          />
+        </div>
       </div>
     );
 }
