@@ -38,9 +38,6 @@ function App() {
         {showNav && <Nav handleThemeChange={handleThemeChange} />}
         <Routes>
           <Route path="/" element={<Home setShowNav={setShowNav} />} />
-          {/* <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} /> */}
-          {/* <Route path="/projects" element={<Index setShowNav={setShowNav} />} /> */}
           <Route path="/projects/:id" element={<Show />} />
           <Route path={"*"} element={<FourOFour setShowNav={setShowNav} />} />
         </Routes>
