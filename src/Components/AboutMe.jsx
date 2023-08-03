@@ -12,9 +12,9 @@ export default function AboutMe() {
     };
 
     return (
-      <div className="flex flex-col lg:flex-row lg:justify-evenly gap-8">
+      <div className="flex flex-col items-center lg:flex-row lg:justify-evenly gap-8">
         {/* Header and Bio container */}
-        <div className="flex flex-col text-center lg:text-left lg:text-lg text-black dark:text-gray rounded-lg max-w-[600px]">
+        <div className="flex flex-col items-center lg:items-start lg:text-left lg:text-lg text-black dark:text-gray rounded-lg max-w-[600px]">
           {/* Header */}
           <h2 className="text-2xl lg:text-4xl text-primary dark:text-gray font-semibold">
             Hi, I'm <span className="text-primary">Joshua</span>
