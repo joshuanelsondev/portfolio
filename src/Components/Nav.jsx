@@ -97,8 +97,8 @@ export default function Nav({ handleThemeChange }) {
       <div
         className={`fixed h-12 w-full z-50 ${
           showNav
-            ? "bg-none duration-500 ease-out -translate-x-10"
-            : "bg-white dark:bg-black ease-in duration-500"
+            ? "bg-none duration-500 ease-out -translate-x-10 lg:transition-none"
+            : "bg-white dark:bg-black ease-in duration-500 lg:transition-none"
         }`}
       >
         <AiOutlineMenu
