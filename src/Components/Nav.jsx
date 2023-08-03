@@ -13,7 +13,7 @@ import {
   MdWest,
   MdSwapHoriz,
   MdSwapVert,
-} from "react-icons/md";
+} from "react-icons/md"; 
 import {
   AiOutlineAppstore,
   AiOutlineMenu,
@@ -29,7 +29,7 @@ const navIcons = [
 
 export default function Nav({ handleThemeChange }) {
   const [showNav, setShowNav] = useState(false);
-
+  // Function to show and hide the smaller screen nav bar
   const toggleNav = () => {
     setShowNav(!showNav);
   };
@@ -92,15 +92,21 @@ export default function Nav({ handleThemeChange }) {
           </div>
         </div>
       </div>
-      {/* Hamburger Menu */}
 
-      <div>
+      {/* Hamburger Menu */}
+      <div
+        className={`fixed h-12 w-full z-50 ${
+          showNav
+            ? "bg-none duration-500 ease-out -translate-x-10"
+            : "bg-white dark:bg-black ease-in duration-500"
+        }`}
+      >
         <AiOutlineMenu
           onClick={toggleNav}
-          className={`lg:hidden fixed text-primary hover:scale-110 cursor-pointer left-5 top-4 ${
+          className={`lg:hidden fixed text-primary hover:scale-110 cursor-pointer top-4 ${
             showNav
-              ? " duration-500 ease-out -translate-x-10"
-              : "ease-in duration-500"
+              ? "duration-500 ease-out -translate-x-10"
+              : "ease-in duration-500 translate-x-6"
           }`}
           size={24}
         />
@@ -134,7 +140,7 @@ export default function Nav({ handleThemeChange }) {
                     duration={500}
                   >
                     <button.icon
-                      className="text-gray rounded-full hover:scale-105 hover:outline outline-gray p-2 cursor-pointer"
+                      className="text-gray rounded-full p-2 cursor-pointer"
                       size={40}
                     />
                   </LinkScroll>
