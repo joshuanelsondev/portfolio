@@ -97,16 +97,16 @@ export default function Nav({ handleThemeChange }) {
       <div
         className={`fixed h-12 w-full z-50 ${
           showNav
-            ? "bg-none duration-500 ease-out -translate-x-10 lg:transition-none"
-            : "bg-white dark:bg-black ease-in duration-500 lg:transition-none"
+            ? "bg-none duration-500 ease-out -translate-x-10 "
+            : "bg-white dark:bg-black ease-in duration-500 "
         }`}
       >
         <AiOutlineMenu
           onClick={toggleNav}
-          className={`lg:hidden fixed text-primary hover:scale-110 cursor-pointer top-4 ${
+          className={`lg:hidden  fixed text-primary hover:scale-110 cursor-pointer top-4 ${
             showNav
               ? "duration-500 ease-out -translate-x-10"
-              : "ease-in duration-500 translate-x-6"
+              : "bease-in duration-500 translate-x-6"
           }`}
           size={24}
         />
