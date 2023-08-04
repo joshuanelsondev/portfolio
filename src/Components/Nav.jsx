@@ -99,7 +99,7 @@ export default function Nav({ handleThemeChange }) {
           showNav
             ? "bg-none duration-500 ease-out -translate-x-10 "
             : "bg-white dark:bg-black ease-in duration-500 "
-        }`}
+        } lg:bg-[transparent] dark:lg:bg-[transparent]`}
       >
         <AiOutlineMenu
           onClick={toggleNav}
