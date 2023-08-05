@@ -9,6 +9,7 @@ import {
   AiFillInstagram,
   AiFillFacebook,
 } from "react-icons/ai";
+import  PursuitHeadshot  from "../assets/pursuit_headshot.png";
 
 
 const icons = [
@@ -41,7 +42,7 @@ export default function HomeComponent({ setShowNav }) {
     return (
       <div className="flex flex-col shrink-0 justify-center lg:justify-start lg:pt-40 items-center gap-10 h-full sm:w-screen lg:w-auto z-10">
         <img
-          src="./src/assets/pursuit_headshot.png"
+          src={PursuitHeadshot}
           alt="Headshot with green background"
           className="h-40 lg:h-[300px] min-w-[100px] rounded-full bg-primary dark:bg-gray shadow-md shadow-primary"
         />
