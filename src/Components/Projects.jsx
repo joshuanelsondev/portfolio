@@ -15,7 +15,7 @@ export default function Projects({ setShowNav }) {
 
     return (
       <div className="flex flex-col items-center md:items-start">
-        <h1 className="text-5xl text-primary font-semibold">Portfolio</h1>
+        <h1 className="text-5xl text-primary font-semibold mb-16">Portfolio</h1>
           <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8">
             {projects.map((project) => (
               <div key={project.id} className="cursor-pointer">
