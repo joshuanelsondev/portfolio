@@ -2,6 +2,8 @@
 // AboutMe.jsx
 import { Link } from "react-router-dom";
 import { useState } from "react";
+import GrassHeadshot from "../assets/headshot_grass.jpeg";
+import SaxImage from "../assets/Press6.jpeg";
 
 export default function AboutMe() {
     // State for showing the image
@@ -58,7 +60,7 @@ export default function AboutMe() {
         {/* Images to toggle between */}
         <div className="relative max-h-[600px] max-w-[300px]">
           <img
-            src="./src/assets/headshot_grass.jpeg"
+            src={GrassHeadshot}
             alt="Headshot on grass with blurred background"
             className={`h-auto w-auto max-h-[400px] max-w-[300px] cursor-pointer drop-shadow-2xl hover:shadow-lg hover:shadow-primary ${
               !showImg && "hidden"
@@ -66,7 +68,7 @@ export default function AboutMe() {
             onClick={toggleImg}
           />
           <img
-            src="./src/assets/Press6.jpeg"
+            src={SaxImage}
             alt="Joshua standing against a black wall holding a saxophone"
             className={`h-auto w-auto max-h-[400px] max-w-[300px] cursor-pointer drop-shadow-2xl hover:shadow-lg hover:shadow-primary ${
               showImg && "hidden"
