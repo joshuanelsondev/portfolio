@@ -14,7 +14,7 @@ export default function AboutMe() {
     };
 
     return (
-      <div className="flex flex-col items-center justify-evenly lg:flex-row lg:justify-evenly gap-8">
+      <div className="flex flex-col lg:flex-row items-center gap-10 h-auto w-auto">
         {/* Header and Bio container */}
         <div className="flex flex-col items-center lg:items-start lg:text-left lg:text-lg text-black dark:text-gray rounded-lg max-w-[500px]">
           {/* Header */}
@@ -58,7 +58,7 @@ export default function AboutMe() {
           </p>
         </div>
         {/* Images to toggle between */}
-        <div className="relative max-h-[600px] max-w-[300px]">
+        <div className="relative max-h-[600px] max-w-[300px] p-4">
           <img
             src={GrassHeadshot}
             alt="Headshot on grass with blurred background"
