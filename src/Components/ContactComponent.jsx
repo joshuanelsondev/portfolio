@@ -1,10 +1,42 @@
 // ContactComponent.jsx
+import { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 export default function ContactComponent () {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+
+      emailjs
+        .sendForm(
+          "service_091zju5",
+          "template_kx2no28",
+          form.current,
+          "OBvKElsFehAWv_TZS"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    };
 
     return (
-        <div>
-            <h2 className="text-6xl text-primary h-screen">Contact</h2>
-        </div>
-    )
+      <div className="h-full w-full border flex flex-col items-center justify-center relative">
+        <h2 className="text-4xl lg:text-6xl text-primary absolute top-0 left-0">Contact</h2>
+        <form className="border flex flex-col" ref={form} onSubmit={sendEmail}>
+          <label>Name</label>
+          <input type="text" name="user_name" />
+          <label>Email</label>
+          <input type="email" name="user_email" />
+          <label>Message</label>
+          <textarea name="message" />
+          <input type="submit" value="Send" />
+        </form>
+      </div>
+    );
 }

@@ -40,7 +40,7 @@ export default function HomeComponent({ setShowNav }) {
     }, [setShowNav]);
 
     return (
-      <div className="flex flex-col shrink-0 justify-center lg:justify-start lg:pt-20 items-center gap-10 h-auto sm:w-screen lg:w-auto z-10">
+      <div className="flex flex-col shrink-0 justify-center lg:justify-start lg:pt-20 items-center gap-10 h-screen sm:w-screen lg:w-auto z-10">
         <img
           src={PursuitHeadshot}
           alt="Headshot with green background"

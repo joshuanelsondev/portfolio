@@ -13,7 +13,7 @@ export default function Home({ setShowNav }) {
     }, [setShowNav]);
 
     return (
-      <div id="home" className="flex flex-col h-full w-full p-20 lg:px-24">
+      <div id="home" className="h-full w-full p-20 lg:px-24">
           <HomeComponent setShowNav={setShowNav} />
           <About  />
           <Index setShowNav={setShowNav} />
