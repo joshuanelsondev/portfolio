@@ -26,8 +26,8 @@ export default function ContactComponent () {
     };
 
     return (
-      <div className="h-full w-full border flex flex-col items-center justify-center relative">
-        <h2 className="text-4xl lg:text-6xl text-primary absolute top-0 left-0">Contact</h2>
+      <div className="h-full w-full border grid grid-rows-[100px]">
+        <h2 className="text-4xl lg:text-6xl text-primary border">Contact</h2>
         <form className="border flex flex-col" ref={form} onSubmit={sendEmail}>
           <label>Name</label>
           <input type="text" name="user_name" />
