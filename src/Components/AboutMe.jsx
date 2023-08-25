@@ -14,7 +14,7 @@ export default function AboutMe() {
     };
 
     return (
-      <div className="flex flex-col lg:flex-row items-center gap-10 h-auto w-auto">
+      <div className="flex flex-col items-center justify-start lg:flex-row gap-10 h-auto w-auto">
         {/* Header and Bio container */}
         <div className="flex flex-col items-center lg:items-start lg:text-left lg:text-lg text-black dark:text-gray rounded-lg max-w-[500px]">
           {/* Header */}
@@ -58,11 +58,11 @@ export default function AboutMe() {
           </p>
         </div>
         {/* Images to toggle between */}
-        <div className="relative max-h-[600px] max-w-[300px] p-4">
+        <div className="relative">
           <img
             src={GrassHeadshot}
             alt="Headshot on grass with blurred background"
-            className={`h-auto w-auto max-h-[400px] max-w-[300px] cursor-pointer drop-shadow-2xl hover:shadow-lg hover:shadow-primary ${
+            className={`h-auto w-auto max-h-[400px] min-w-[300px] cursor-pointer drop-shadow-2xl hover:shadow-lg hover:shadow-primary ${
               !showImg && "hidden"
             }`}
             onClick={toggleImg}
@@ -70,7 +70,7 @@ export default function AboutMe() {
           <img
             src={SaxImage}
             alt="Joshua standing against a black wall holding a saxophone"
-            className={`h-auto w-auto max-h-[400px] max-w-[300px] cursor-pointer drop-shadow-2xl hover:shadow-lg hover:shadow-primary ${
+            className={`h-auto w-auto max-h-[400px] min-w-[300px] cursor-pointer drop-shadow-2xl hover:shadow-lg hover:shadow-primary ${
               showImg && "hidden"
             }`}
             onClick={toggleImg}
