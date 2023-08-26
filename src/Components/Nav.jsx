@@ -11,14 +11,13 @@ import {
   MdOutlineDarkMode,
   MdOutlineLightMode,
   MdWest,
-  MdSwapHoriz,
-  MdSwapVert,
 } from "react-icons/md"; 
 import {
   AiOutlineAppstore,
   AiOutlineMenu,
 } from "react-icons/ai";
 
+// Icons for the navbar and hamburger menu
 const navIcons = [
   { id: generateId(), name: "Home", icon: MdHome },
   { id: generateId(), name: "About", icon: MdAccountCircle },
@@ -112,57 +111,58 @@ export default function Nav({ handleThemeChange }) {
         />
       </div>
       <div
-        className={`fixed -left-20 top-0 bg-primary bg-opacity-90 flex flex-col items-center pt-4 h-full w-20 z-50 lg:hidden ${
+        className={`fixed -left-20 top-0 bg-primary bg-opacity-90 flex flex-col items-center pt-4 h-full w-10 z-50 lg:hidden ${
           showNav
             ? "duration-500 ease-in translate-x-20"
             : "duration-500 ease-out"
         }`}
       >
+        {/* Arrow for closing side nav */}
         <MdWest
           className="text-gray hover:scale-110 cursor-pointer left-5 top-4"
           onClick={toggleNav}
-          size={28}
+          size={20}
         />
 
         {/* Smaller screen nav bar */}
         {
-          <div className={`flex flex-col h-full w-20 mt-24 gap-8 top-10`}>
+          <div className={`grid h-full w-20`}>
             {navIcons.map((button) => {
               return (
-                <div key={button.id} className="flex flex-col items-center">
+                <div key={button.id} className="flex flex-col items-center justify-center">
                   <LinkScroll
                     className="peer"
                     activeClass="outline rounded-full text-gray"
                     to={`${button.name.toLowerCase()}`}
                     spy={true}
                     smooth={true}
-                    offset={0}
+                    offset={-100}
                     duration={500}
                   >
                     <button.icon
-                      className="text-gray rounded-full p-2 cursor-pointer"
-                      size={40}
+                      className="text-gray rounded-full p-1 cursor-pointer"
+                      size={25}
                     />
                   </LinkScroll>
                 </div>
               );
             })}
             {/* Theme buttons */}
-            <div className="relative flex">
+            <div className="flex flex-col items-center justify-center">
               {/* Dark theme nav button */}
-              <div className="absolute invisible dark:visible flex flex-col items-center left-5">
+              <div className="absolute invisible dark:visible">
                 <MdOutlineDarkMode
                   onClick={() => handleThemeChange("dark")}
-                  className="peer text-gray hover:outline hover:dark:outline-gray rounded-full p-2 cursor-pointer"
-                  size={40}
+                  className="peer text-gray hover:outline hover:dark:outline-gray rounded-full p-1 cursor-pointer"
+                  size={25}
                 />
               </div>
               {/* Light theme nav button */}
-              <div className="absolute dark:invisible flex flex-col items-center left-5">
+              <div className="absolute dark:invisible">
                 <MdOutlineLightMode
                   onClick={() => handleThemeChange("light")}
-                  className="peer text-gray hover:outline outline-gray rounded-full p-2 cursor-pointer"
-                  size={40}
+                  className="peer text-gray hover:outline outline-gray rounded-full p-1 cursor-pointer"
+                  size={25}
                 />
               </div>
             </div>
