@@ -48,7 +48,7 @@ export default function Nav({ handleThemeChange }) {
             >
               <LinkScroll
                 className="peer"
-                activeClass="outline rounded-full text-primary"
+                activeClass="outline outline-2 rounded-full text-primary"
                 to={`${button.name.toLowerCase()}`}
                 spy={true}
                 smooth={true}
@@ -56,7 +56,7 @@ export default function Nav({ handleThemeChange }) {
                 duration={500}
               >
                 <button.icon
-                  className="text-primary dark:text-gray rounded-full hover:outline hover:dark:outline-primary p-2 cursor-pointer"
+                  className="text-primary dark:text-gray rounded-full p-2 cursor-pointer"
                   size={40}
                 />
               </LinkScroll>
@@ -71,7 +71,7 @@ export default function Nav({ handleThemeChange }) {
           <div className="absolute invisible dark:visible flex items-center lg:gap-4 md:gap-1">
             <MdOutlineDarkMode
               onClick={() => handleThemeChange("dark")}
-              className="peer text-gray hover:outline hover:dark:outline-primary rounded-full p-2 cursor-pointer"
+              className="peer text-gray hover:dark:outline-primary rounded-full p-2 cursor-pointer"
               size={40}
             />
             <p className="invisible text-primary font-semibold peer-hover:visible">
@@ -82,7 +82,7 @@ export default function Nav({ handleThemeChange }) {
           <div className="absolute dark:invisible flex items-center lg:gap-4 md:gap-1">
             <MdOutlineLightMode
               onClick={() => handleThemeChange("light")}
-              className="peer text-primary hover:outline  rounded-full p-2 cursor-pointer"
+              className="peer text-primary rounded-full p-2 cursor-pointer"
               size={40}
             />
             <p className="invisible text-primary font-semibold peer-hover:visible">
@@ -105,16 +105,16 @@ export default function Nav({ handleThemeChange }) {
           className={`lg:hidden  fixed text-primary hover:scale-110 cursor-pointer top-4 ${
             showNav
               ? "duration-500 ease-out -translate-x-10"
-              : "bease-in duration-500 translate-x-6"
+              : "ease-in duration-600 translate-x-6"
           }`}
           size={24}
         />
       </div>
       <div
-        className={`fixed -left-20 top-0 bg-primary bg-opacity-90 flex flex-col items-center pt-4 h-full w-10 z-50 lg:hidden ${
+        className={`fixed  -left-20 top-0 bg-primary bg-opacity-90 flex flex-col items-center pt-4 h-full w-10 z-50 lg:hidden ${
           showNav
             ? "duration-500 ease-in translate-x-20"
-            : "duration-500 ease-out"
+            : "duration-500 ease-in-out"
         }`}
       >
         {/* Arrow for closing side nav */}
