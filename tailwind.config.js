@@ -6,6 +6,7 @@ export default {
       backgroundImage: {
         headshot1: "url(./src/assets/headshot.jpeg)",
         headshot2: "url(./src/assets/pursuit_headshot.png)",
+        'dark': "url(./src/assets/slickCarbon.png)"
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",
