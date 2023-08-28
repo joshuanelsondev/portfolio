@@ -6,7 +6,7 @@ export default {
       backgroundImage: {
         headshot1: "url(./src/assets/headshot.jpeg)",
         headshot2: "url(./src/assets/pursuit_headshot.png)",
-        'dark': "url(./src/assets/slickCarbon.png)"
+        dark: "url(./src/assets/slickCarbon.png)",
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",
@@ -20,6 +20,9 @@ export default {
       white: "#FFFFFF",
       red: "#E73B3B",
       black: "#000000",
+    },
+    fontFamily: {
+      sans: ['Roboto', 'Helvetica', 'Proxima Nova'],
     },
   },
   plugins: [],
