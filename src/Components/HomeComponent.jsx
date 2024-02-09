@@ -41,11 +41,11 @@ export default function HomeComponent({ setShowNav }) {
 
     return (
       <div className="h-full sm:w-full lg:w-auto z-10 mt-40 xl:mt-60">
-        <div className="flex flex-col items-center gap-10">
+        <div className="flex flex-col items-center gap-4">
           <img
             src={PursuitHeadshot}
             alt="Headshot with green background"
-            className="h-60 outline outline-primary lg:h-[300px] xl:h-[400px] min-w-[100px] rounded-full bg-primary dark:bg-gray shadow-lg shadow-primary"
+            className="h-60 lg:h-[300px] xl:h-[400px] min-w-[100px] rounded-full bg-primary dark:bg-gray shadow-md shadow-black"
           />
           <div className="flex flex-col gap-4w-auto h-auto z-10 text-center">
             <h1 className="text-[40px] font-semibold lg:text-5xl xl:text-6xl text-primary dark:text-">
