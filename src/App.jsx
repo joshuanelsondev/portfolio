@@ -28,7 +28,7 @@ function App() {
   }
  
   return (
-    <main className="h-screen w-full">
+    <main className="h-full w-full">
       <Router>
         {showNav && <Nav handleThemeChange={handleThemeChange} />}
         <Routes>
