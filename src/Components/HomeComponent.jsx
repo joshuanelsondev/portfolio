@@ -11,7 +11,7 @@ import {
 } from "react-icons/ai";
 import  PursuitHeadshot  from "../assets/pursuit_headshot.png";
 
-
+// Array of icons and links for external links
 const icons = [
   {
     id: generateId(),
