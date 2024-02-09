@@ -47,7 +47,7 @@ export default function HomeComponent({ setShowNav }) {
             alt="Headshot with green background"
             className="h-60 outline outline-primary lg:h-[300px] xl:h-[400px] min-w-[100px] rounded-full bg-primary dark:bg-gray shadow-lg shadow-primary"
           />
-          <div className="flex flex-col gap-4 w-96 xl:w-9/12 h-auto z-10 text-center">
+          <div className="flex flex-col gap-4w-auto h-auto z-10 text-center">
             <h1 className="text-[40px] font-semibold lg:text-5xl xl:text-6xl text-primary dark:text-">
               Joshua Nelson
             </h1>
