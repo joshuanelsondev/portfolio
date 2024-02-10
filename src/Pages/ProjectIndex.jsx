@@ -1,4 +1,4 @@
-// Index.jsx
+// ProjectIndex.jsx
 
 import PropTypes from "prop-types";
 import Projects from "../Components/Projects";
