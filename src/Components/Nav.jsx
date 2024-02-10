@@ -37,7 +37,7 @@ export default function Nav({ handleThemeChange }) {
     <div>
       {/* Nav bar Container */}
       <div
-        className={`hidden lg:flex flex-col fixed top-[30%] gap-12 ml-1 sm:ml-4 z-40`}
+        className={`hidden lg:flex flex-col fixed top-[30%] pl-4 gap-12 sm:ml-4 z-40`}
       >
         {/* Loop through the nav buttons */}
         {navIcons.map((button) => {
@@ -56,13 +56,10 @@ export default function Nav({ handleThemeChange }) {
                 duration={500}
               >
                 <button.icon
-                  className="text-primary dark:text-gray rounded-full p-2 cursor-pointer"
+                  className="text-primary dark:text-white rounded-full p-2 cursor-pointer"
                   size={40}
                 />
               </LinkScroll>
-              <p className="invisible text-primary dark:text-primary font-semibold peer-hover:visible">
-                {button.name}
-              </p>
             </div>
           );
         })}
@@ -71,12 +68,9 @@ export default function Nav({ handleThemeChange }) {
           <div className="absolute invisible dark:visible flex items-center lg:gap-4 md:gap-1">
             <MdOutlineDarkMode
               onClick={() => handleThemeChange("dark")}
-              className="peer text-gray hover:dark:outline-primary rounded-full p-2 cursor-pointer"
+              className="peer text-gray dark:text-white hover:dark:outline-primary rounded-full p-2 cursor-pointer"
               size={40}
             />
-            <p className="invisible text-primary font-semibold peer-hover:visible">
-              Dark
-            </p>
           </div>
           {/* Light theme nav button */}
           <div className="absolute dark:invisible flex items-center lg:gap-4 md:gap-1">
@@ -85,9 +79,6 @@ export default function Nav({ handleThemeChange }) {
               className="peer text-primary rounded-full p-2 cursor-pointer"
               size={40}
             />
-            <p className="invisible text-primary font-semibold peer-hover:visible">
-              Light
-            </p>
           </div>
         </div>
       </div>
