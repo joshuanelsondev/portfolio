@@ -62,7 +62,7 @@ export default function AboutMe() {
           <img
             src={GrassHeadshot}
             alt="Headshot on grass with blurred background"
-            className={`h-auto w-auto max-h-[400px] min-w-[300px] cursor-pointer drop-shadow-2xl hover:shadow-lg hover:shadow-primary ${
+            className={`h-auto w-auto max-h-[400px] min-w-[300px] cursor-pointer shadow-lg shadow-black rounded-2xl ${
               !showImg && "hidden"
             }`}
             onClick={toggleImg}
@@ -70,7 +70,7 @@ export default function AboutMe() {
           <img
             src={SaxImage}
             alt="Joshua standing against a black wall holding a saxophone"
-            className={`h-auto w-auto max-h-[400px] min-w-[300px] cursor-pointer drop-shadow-2xl hover:shadow-lg hover:shadow-primary ${
+            className={`h-auto w-auto max-h-[400px] min-w-[300px] cursor-pointer shadow-lg shadow-black rounded-2xl ${
               showImg && "hidden"
             }`}
             onClick={toggleImg}
