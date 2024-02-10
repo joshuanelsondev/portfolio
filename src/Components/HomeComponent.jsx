@@ -45,13 +45,13 @@ export default function HomeComponent({ setShowNav }) {
           <img
             src={PursuitHeadshot}
             alt="Headshot with green background"
-            className="h-60 lg:h-[300px] xl:h-[400px] min-w-[100px] rounded-full bg-primary dark:bg-gray shadow-md shadow-black"
+            className="h-60 lg:h-[300px] xl:h-[400px] min-w-[100px] rounded-3xl pt-8 px-4 bg-primary dark:bg-gray shadow-xl shadow-[gray]"
           />
           <div className="flex flex-col gap-4w-auto h-auto z-10 text-center">
-            <h1 className="text-[40px] font-semibold lg:text-5xl xl:text-6xl text-primary dark:text-">
+            <h1 className="text-[40px] font-semibold lg:text-5xl xl:text-6xl text-primary drop-shadow-xl">
               Joshua Nelson
             </h1>
-            <h2 className="text-2xl lg:text-4xl font-normal text-black dark:text-primary">
+            <h2 className="text-2xl lg:text-3xl mt-2 font-normal text-darkGray dark:text-primary">
               <span className="text-primary dark:text-white">Software</span> Developer
             </h2>
             {/* Icons iteration */}
