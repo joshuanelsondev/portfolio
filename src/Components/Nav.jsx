@@ -11,6 +11,7 @@ import {
   MdOutlineDarkMode,
   MdOutlineLightMode,
   MdWest,
+  MdOutlineDesktopWindows
 } from "react-icons/md"; 
 import {
   AiOutlineAppstore,
@@ -63,20 +64,29 @@ export default function Nav({ handleThemeChange }) {
             </div>
           );
         })}
+        {/* THEMES */}
         <div className="relative">
           {/* Dark theme nav button */}
-          <div className="absolute invisible dark:visible flex items-center lg:gap-4 md:gap-1">
+          <div className=" flex items-center lg:gap-4 md:gap-1">
             <MdOutlineDarkMode
               onClick={() => handleThemeChange("dark")}
-              className="peer text-gray dark:text-white hover:dark:outline-primary rounded-full p-2 cursor-pointer"
+              className="peer text-primary dark:text-white hover:dark:outline-primary rounded-full p-2 cursor-pointer"
               size={40}
             />
           </div>
           {/* Light theme nav button */}
-          <div className="absolute dark:invisible flex items-center lg:gap-4 md:gap-1">
+          <div className=" flex items-center lg:gap-4 md:gap-1">
             <MdOutlineLightMode
               onClick={() => handleThemeChange("light")}
-              className="peer text-primary rounded-full p-2 cursor-pointer"
+              className="peer text-primary rounded-full p-2 cursor-pointer dark:text-white"
+              size={40}
+            />
+          </div>
+          {/* User System theme */}
+          <div className=" flex items-center lg:gap-4 md:gap-1">
+            <MdOutlineDesktopWindows
+              onClick={() => handleThemeChange("system")}
+              className="peer text-primary rounded p-2 cursor-pointer dark:text-white"
               size={40}
             />
           </div>

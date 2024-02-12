@@ -10,13 +10,11 @@ export const applyTheme = () => {
   } else {
     document.documentElement.classList.remove("dark");
   }
+  
 };
 
 export const setTheme = (theme) => {
-  if (theme === 'light') {
-    localStorage.theme = 'dark';
-  } else {
-    localStorage.theme = 'light';
-  }
+  // console.log(theme, window.matchMedia("(prefers-color-scheme: dark)").matches)
+  theme === 'system' ? localStorage.removeItem('theme') : localStorage.theme = theme;
 };
 
