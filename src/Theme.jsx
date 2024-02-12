@@ -13,10 +13,6 @@ export const applyTheme = () => {
 };
 
 export const setTheme = (theme) => {
-  localStorage.theme = theme;
+  theme === 'system' ? localStorage.removeItem('theme') : localStorage.theme = theme;
 };
-
-export const applyUserSettingTheme = () => {
-  localStorage.removeItem('theme');
-}
 
