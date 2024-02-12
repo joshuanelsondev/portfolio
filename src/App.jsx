@@ -20,8 +20,14 @@ function App() {
 
   // Apply the user's theme at the load of the page
   useEffect(() => {
-    applyTheme();
-  });
+    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+      setTheme('dark');
+    } else {
+      setTheme('light');
+    }
+    console.log(window.matchMedia("(prefers-color-scheme: dark)"))
+    // applyTheme();
+  },[]);
   
   // Toggle between light and dark modes and set the theme
   const handleThemeChange = (theme) => {

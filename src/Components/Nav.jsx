@@ -85,7 +85,7 @@ export default function Nav({ handleThemeChange }) {
           {/* User System theme */}
           <div className=" flex items-center lg:gap-4 md:gap-1">
             <MdOutlineDesktopWindows
-              onClick={() => handleThemeChange("light")}
+              onClick={() => handleThemeChange("system")}
               className="peer text-primary rounded p-2 cursor-pointer dark:text-white"
               size={40}
             />
