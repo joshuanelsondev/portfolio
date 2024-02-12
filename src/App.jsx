@@ -18,10 +18,12 @@ function App() {
   // State for showing/hiding the nav. Hide nav when the Error page is active.
   const [showNav, setShowNav] = useState(true);
 
+  // Apply the user's theme at the load of the page
   useEffect(() => {
     applyTheme();
-  }); 
+  });
   
+  // Toggle between light and dark modes and set the theme
   const handleThemeChange = (theme) => {
     setTheme(theme);
     applyTheme();
