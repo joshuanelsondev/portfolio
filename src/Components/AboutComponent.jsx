@@ -1,11 +1,11 @@
 /* eslint-disable react/no-unescaped-entities */
-// AboutMe.jsx
+// AboutComponent.jsx
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import GrassHeadshot from "../assets/headshot_grass.jpeg";
 import SaxImage from "../assets/Press6.jpeg";
 
-export default function AboutMe() {
+export default function AboutComponent() {
     // State for showing the image
     const [ showImg, setShowImg ] = useState(true);
     // Function to toggle the showImg state

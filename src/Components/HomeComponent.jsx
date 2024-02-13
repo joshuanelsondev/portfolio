@@ -40,7 +40,7 @@ export default function HomeComponent({ setShowNav }) {
     }, [setShowNav]);
 
     return (
-      <div id='home' className="h-full sm:w-full lg:w-auto min-w-fit z-10 mt-32 xl:m-24">
+      <div id='home' className="h-full sm:w-full lg:w-auto min-w-fit z-10">
         <div className="flex flex-col items-center gap-4">
           <img
             src={PursuitHeadshot}

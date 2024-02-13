@@ -4,7 +4,7 @@ import { useEffect } from "react";
 // import { Link as LinkScroll } from "react-scroll";
 import HomeComponent from "../Components/HomeComponent";
 import About from "../Pages/About";
-import ProjectIndex from "./ProjectIndex";
+import Portfolio from "./Portfolio";
 import Contact from "../Pages/Contact";
 
 export default function Home({ setShowNav }) {
@@ -16,7 +16,7 @@ export default function Home({ setShowNav }) {
       <div className="h-full w-full min-w-fit lg:px-24 flex flex-col items-center">
           <HomeComponent setShowNav={setShowNav} />
           <About  />
-          <ProjectIndex setShowNav={setShowNav} />
+          <Portfolio setShowNav={setShowNav} />
           <Contact />
       </div>
     );
