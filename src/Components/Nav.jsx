@@ -48,7 +48,7 @@ export default function Nav({ handleThemeChange }) {
             >
               <LinkScroll
                 className="peer"
-                activeClass="outline outline-2 outline-black rounded-full text-primary"
+                activeClass="outline outline-2 rounded-full text-primary"
                 to={`${button.name.toLowerCase()}`}
                 spy={true}
                 smooth={true}
