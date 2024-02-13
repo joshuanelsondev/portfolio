@@ -37,7 +37,7 @@ export default function Nav({ handleThemeChange }) {
     <div>
       {/* Nav bar Container */}
       <div
-        className={`hidden lg:flex flex-col fixed top-[30%] pl-4 gap-12 sm:ml-4 z-40`}
+        className={`hidden md:flex flex-col fixed top-[30%] pl-4 gap-12 sm:ml-4 z-40`}
       >
         {/* Loop through the nav buttons */}
         {navIcons.map((button) => {
@@ -85,15 +85,15 @@ export default function Nav({ handleThemeChange }) {
 
       {/* Hamburger Menu */}
       <div
-        className={`fixed h-12 w-full z-50 ${
+        className={`fixed md:hidden h-12 w-full z-50 top-0 left-0 flex items-center ${
           showNav
             ? "bg-none duration-500 ease-out -translate-x-10 "
             : "bg-white dark:bg-dark ease-in duration-500 "
-        } lg:bg-[transparent] dark:lg:bg-[transparent]`}
+        }`}
       >
         <AiOutlineMenu
           onClick={toggleNav}
-          className={`lg:hidden  fixed text-primary hover:scale-110 cursor-pointer top-4 ${
+          className={`md:hidden text-black hover:scale-110 cursor-pointer ${
             showNav
               ? "duration-500 ease-out -translate-x-10"
               : "ease-in duration-600 translate-x-6"
@@ -101,6 +101,7 @@ export default function Nav({ handleThemeChange }) {
           size={24}
         />
       </div>
+      {/* Smaller screen nav bar */}
       <div
         className={`fixed  -left-20 top-0 bg-primary bg-opacity-90 flex flex-col items-center pt-4 h-full w-10 z-50 lg:hidden ${
           showNav
@@ -115,7 +116,6 @@ export default function Nav({ handleThemeChange }) {
           size={20}
         />
 
-        {/* Smaller screen nav bar */}
         {
           <div className={`grid h-full w-20`}>
             {navIcons.map((button) => {
