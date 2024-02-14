@@ -37,7 +37,7 @@ export default function Nav({ handleThemeChange }) {
     <div>
       {/* Nav bar Container */}
       <div
-        className={`hidden md:flex flex-col fixed top-[30%] pl-4 gap-12 sm:ml-4 z-40`}
+        className={`hidden md:flex flex-col fixed top-[30%] left-10 xl:left-20 2xl:left-40 pl-4 gap-12 sm:ml-4 z-40`}
       >
         {/* Loop through the nav buttons */}
         {navIcons.map((button) => {
@@ -127,7 +127,7 @@ export default function Nav({ handleThemeChange }) {
                     to={`${button.name.toLowerCase()}`}
                     spy={true}
                     smooth={true}
-		    offset={-100}
+                    offset={-100}
                     duration={500}
                   >
                     <button.icon

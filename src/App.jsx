@@ -47,7 +47,6 @@ function App() {
   return (
     <main className="h-full w-full">
       <Router>
-        {/* {showErrorPage && <Nav handleThemeChange={handleThemeChange} />} */}
         <Routes>
           <Route path="/" element={<Home  handleThemeChange={handleThemeChange} />} />
           <Route path={"*"} element={<FourOFour />} />
