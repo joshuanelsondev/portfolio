@@ -40,14 +40,14 @@ export default function HomeComponent({ setShowNav }) {
     }, [setShowNav]);
 
     return (
-      <div id='home' className="h-full sm:w-full lg:w-auto z-10 mt-32 xl:m-24">
+      <div id='home' className="h-full sm:w-full lg:w-auto min-w-fit z-10">
         <div className="flex flex-col items-center gap-4">
           <img
             src={PursuitHeadshot}
             alt="Headshot with green background"
             className="h-60 lg:h-[300px] xl:h-[400px] min-w-[100px] rounded-3xl pt-8 px-4 bg-primary dark:bg-primary shadow-xl shadow-gray dark:shadow-darkGray"
           />
-          <div className="flex flex-col gap-4 mt-8 w-auto h-auto z-10 text-center">
+          <div className="flex flex-col  w-auto h-auto z-10 text-center">
             <h1 className="text-[40px] font-semibold lg:text-5xl xl:text-6xl text-primary drop-shadow-xl">
               Joshua Nelson
             </h1>
