@@ -8,7 +8,7 @@ import { applyTheme, setTheme } from "./Theme";
 
 // PAGES
 import FourOFour from "./Pages/FourOFour";
-import Home from "./Pages/Home";
+import HomePage from "./HomePage";
 
 // COMPONENTS
 // import Nav from "./Components/Nav";
@@ -48,7 +48,7 @@ function App() {
     <main className="h-full w-full">
       <Router>
         <Routes>
-          <Route path="/" element={<Home  handleThemeChange={handleThemeChange} />} />
+          <Route path="/" element={<HomePage  handleThemeChange={handleThemeChange} />} />
           <Route path={"*"} element={<FourOFour />} />
         </Routes>
       </Router>
