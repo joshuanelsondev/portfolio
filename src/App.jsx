@@ -2,7 +2,7 @@
 
 // DEPENDENCIES
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useEffect } from "react";
 import { applyTheme, setTheme } from "./Theme";
 
 
@@ -11,13 +11,10 @@ import FourOFour from "./Pages/FourOFour";
 import Home from "./Pages/Home";
 
 // COMPONENTS
-import Nav from "./Components/Nav";
+// import Nav from "./Components/Nav";
 
 
 function App() {
-  // State for showing/hiding the nav. Hide nav when the Error page is active.
-  const [showNav, setShowNav] = useState(true);
-
 
   // Apply the user's theme at the load of the page
   useEffect(() => {
@@ -50,10 +47,10 @@ function App() {
   return (
     <main className="h-full w-full">
       <Router>
-        {showNav && <Nav handleThemeChange={handleThemeChange} />}
+        {/* {showErrorPage && <Nav handleThemeChange={handleThemeChange} />} */}
         <Routes>
-          <Route path="/" element={<Home setShowNav={setShowNav} />} />
-          <Route path={"*"} element={<FourOFour setShowNav={setShowNav} />} />
+          <Route path="/" element={<Home  handleThemeChange={handleThemeChange} />} />
+          <Route path={"*"} element={<FourOFour />} />
         </Routes>
       </Router>
     </main>

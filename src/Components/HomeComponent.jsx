@@ -1,7 +1,5 @@
 // HomePage.jsx
 
-import PropTypes from "prop-types";
-import { useEffect } from "react";
 import { v4 as generateId } from "uuid";
 import {
   AiFillLinkedin,
@@ -34,10 +32,7 @@ const icons = [
     link: "https://www.instagram.com/joshuanelsonmusic/",
   },
 ];
-export default function HomeComponent({ setShowNav }) {
-    useEffect(() => {
-    setShowNav(true);
-    }, [setShowNav]);
+export default function HomeComponent() {
 
     return (
       <div id='home' className="h-full sm:w-full lg:w-auto min-w-fit z-10">
@@ -83,7 +78,3 @@ export default function HomeComponent({ setShowNav }) {
     );
 }
 
-
-HomeComponent.propTypes = {
-  setShowNav: PropTypes.func.isRequired,
-};

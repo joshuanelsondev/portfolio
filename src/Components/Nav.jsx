@@ -27,10 +27,10 @@ const navIcons = [
 
 
 export default function Nav({ handleThemeChange }) {
-  const [showNav, setShowNav] = useState(false);
+  const [showMiniNav, setShowMiniNav] = useState(false);
   // Function to show and hide the smaller screen nav bar
   const toggleNav = () => {
-    setShowNav(!showNav);
+    setShowMiniNav(!showMiniNav);
   };
 
   return (
@@ -86,7 +86,7 @@ export default function Nav({ handleThemeChange }) {
       {/* Hamburger Menu */}
       <div
         className={`fixed md:hidden h-12 w-full z-50 top-0 left-0 flex items-center ${
-          showNav
+          showMiniNav
             ? "bg-none duration-500 ease-out -translate-x-10 "
             : "bg-white dark:bg-dark ease-in duration-500 "
         }`}
@@ -94,7 +94,7 @@ export default function Nav({ handleThemeChange }) {
         <AiOutlineMenu
           onClick={toggleNav}
           className={`md:hidden text-black hover:scale-110 cursor-pointer ${
-            showNav
+            showMiniNav
               ? "duration-500 ease-out -translate-x-10"
               : "ease-in duration-600 translate-x-6"
           }`}
@@ -104,7 +104,7 @@ export default function Nav({ handleThemeChange }) {
       {/* Smaller screen nav bar */}
       <div
         className={`fixed  -left-20 top-0 bg-primary bg-opacity-90 flex flex-col items-center pt-4 h-full w-10 z-50 lg:hidden ${
-          showNav
+          showMiniNav
             ? "duration-500 ease-in translate-x-20"
             : "duration-500 ease-in-out"
         }`}

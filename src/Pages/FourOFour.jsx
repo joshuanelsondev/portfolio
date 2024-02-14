@@ -1,23 +1,12 @@
 // FourOFour.jsx
 
-import PropTypes from "prop-types";
 import FourOFourLogo from "../assets/FourOFourLogo.png"
-import { useEffect } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { HiHomeModern, HiArrowLeftCircle } from "react-icons/hi2";
 
 
-export default function FourOFour({ setShowNav }) {
+export default function FourOFour() {
   const navigate = useNavigate();
-
-  useEffect(() => {
-    toggleError()
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
-
-  const toggleError = () => {
-    setShowNav(false);
-  }
 
   return (
     <div className="flex  flex-col items-center h-screen w-full">
@@ -28,7 +17,3 @@ export default function FourOFour({ setShowNav }) {
     </div>
   );
 }
-
-FourOFour.propTypes = {
-  setShowNav: PropTypes.func.isRequired,
-};

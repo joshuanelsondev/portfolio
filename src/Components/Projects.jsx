@@ -1,17 +1,15 @@
 // Projects
 
-import PropTypes from "prop-types";
 import { useState, useEffect } from "react";
 import { projectData } from '../assets/projectData';
 import Project from './Project';
 
 
-export default function Projects({ setShowNav }) {
+export default function Projects() {
     const [projects, setProjects] = useState([]);
     useEffect(() => {
-        setShowNav(true);
         setProjects(projectData);
-    }, [projects, setShowNav])
+    }, [projects])
 
     return (
       <div className="flex flex-col items-center ">
@@ -25,7 +23,3 @@ export default function Projects({ setShowNav }) {
       </div>
     );
 }
-
-Projects.propTypes = {
-  setShowNav: PropTypes.func.isRequired,
-};
