@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import HomeComponent from "../Components/HomeComponent";
 import AboutComponent from "../Components/AboutComponent";
 import PortfolioComponent from "../Components/PortfolioComponent";
-import Contact from "../Pages/Contact";
+import ContactComponent from "../Components/ContactComponent";
 import Nav from "../Components/Nav";
 
 export default function Home({ handleThemeChange }) {
@@ -14,7 +14,7 @@ export default function Home({ handleThemeChange }) {
           <HomeComponent />
           <AboutComponent />
           <PortfolioComponent />
-          <Contact />
+          <ContactComponent />
       </div>
     );
 }
