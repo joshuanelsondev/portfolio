@@ -8,7 +8,7 @@ export default function Portfolio({ setShowNav }) {
   return (
     <div
       id="portfolio"
-      className="lg:mx-20 h-auto w-auto"
+      className="h-auto w-auto"
     >
       <h1 className="text-5xl text-primary font-semibold mb-16">Portfolio</h1>
       <Projects setShowNav={setShowNav} />
