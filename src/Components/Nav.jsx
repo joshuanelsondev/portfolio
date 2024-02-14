@@ -127,7 +127,7 @@ export default function Nav({ handleThemeChange }) {
                     to={`${button.name.toLowerCase()}`}
                     spy={true}
                     smooth={true}
-                    offset={-100}
+		    offset={-100}
                     duration={500}
                   >
                     <button.icon
