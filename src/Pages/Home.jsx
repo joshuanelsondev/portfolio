@@ -1,10 +1,8 @@
 // Home.jsx
 import PropTypes from "prop-types";
-// import { Link as LinkScroll } from "react-scroll";
 import HomeComponent from "../Components/HomeComponent";
-// import About from "../Pages/About";
 import AboutComponent from "../Components/AboutComponent";
-import Portfolio from "./Portfolio";
+import PortfolioComponent from "../Components/PortfolioComponent";
 import Contact from "../Pages/Contact";
 import Nav from "../Components/Nav";
 
@@ -15,7 +13,7 @@ export default function Home({ handleThemeChange }) {
           <Nav handleThemeChange={handleThemeChange} />
           <HomeComponent />
           <AboutComponent />
-          <Portfolio />
+          <PortfolioComponent />
           <Contact />
       </div>
     );
