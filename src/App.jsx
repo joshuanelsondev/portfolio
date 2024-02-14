@@ -7,7 +7,7 @@ import { applyTheme, setTheme } from "./Theme";
 
 
 // PAGES
-import FourOFour from "./Pages/FourOFour";
+import ErrorPage from "./ErrorPage";
 import HomePage from "./HomePage";
 
 // COMPONENTS
@@ -49,7 +49,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<HomePage  handleThemeChange={handleThemeChange} />} />
-          <Route path={"*"} element={<FourOFour />} />
+          <Route path={"*"} element={<ErrorPage />} />
         </Routes>
       </Router>
     </main>

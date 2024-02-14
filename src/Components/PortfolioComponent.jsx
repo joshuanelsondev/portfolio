@@ -1,4 +1,4 @@
-// PortfolioComponent
+// PortfolioComponent.jsx
 
 import { useState, useEffect } from "react";
 import { projectData } from '../assets/projectData';
