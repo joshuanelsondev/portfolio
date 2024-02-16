@@ -37,7 +37,7 @@ export default function Nav({ handleThemeChange }) {
     <div>
       {/* Nav bar Container */}
       <div
-        className={`hidden md:flex flex-col fixed top-[30%] left-10 xl:left-20 2xl:left-40 pl-4 gap-12 sm:ml-4 z-40`}
+        className={`hidden md:flex flex-col fixed top-[30%] left-6 2xl:left-16 pl-4 gap-12 sm:ml-4 z-40`}
       >
         {/* Loop through the nav buttons */}
         {navIcons.map((button) => {
@@ -103,7 +103,7 @@ export default function Nav({ handleThemeChange }) {
       </div>
       {/* Smaller screen nav bar */}
       <div
-        className={`fixed  -left-20 top-0 bg-primary bg-opacity-90 flex flex-col items-center pt-4 h-full w-10 z-50 lg:hidden ${
+        className={`fixed bg-primary bg-opacity-90 -left-20 top-0 flex flex-col items-center h-full w-10 pt-4  z-50 lg:hidden ${
           showMiniNav
             ? "duration-500 ease-in translate-x-20"
             : "duration-500 ease-in-out"
@@ -143,7 +143,7 @@ export default function Nav({ handleThemeChange }) {
               {/* Dark theme nav button */}
               <div className="absolute invisible dark:visible">
                 <MdOutlineDarkMode
-                  onClick={() => handleThemeChange("dark")}
+                  onClick={() => handleThemeChange("light")}
                   className="peer text-gray hover:outline hover:dark:outline-gray rounded-full p-1 cursor-pointer"
                   size={25}
                 />
@@ -151,7 +151,7 @@ export default function Nav({ handleThemeChange }) {
               {/* Light theme nav button */}
               <div className="absolute dark:invisible">
                 <MdOutlineLightMode
-                  onClick={() => handleThemeChange("light")}
+                  onClick={() => handleThemeChange("dark")}
                   className="peer text-gray hover:outline outline-gray rounded-full p-1 cursor-pointer"
                   size={25}
                 />
