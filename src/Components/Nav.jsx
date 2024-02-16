@@ -37,7 +37,7 @@ export default function Nav({ handleThemeChange }) {
     <div>
       {/* Nav bar Container */}
       <div
-        className={`hidden md:flex flex-col fixed top-[30%] left-6 xl:left-16 2xl:left-36 pl-4 gap-12 sm:ml-4 z-40`}
+        className={`hidden md:flex flex-col fixed top-[30%] left-6 2xl:left-16 pl-4 gap-12 sm:ml-4 z-40`}
       >
         {/* Loop through the nav buttons */}
         {navIcons.map((button) => {
