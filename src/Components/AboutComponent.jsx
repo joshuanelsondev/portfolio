@@ -20,7 +20,7 @@ export default function AboutComponent() {
           {/* Header and Bio container */}
           <div className="flex flex-col items-center lg:items-start lg:text-left lg:text-lg text-black dark:text-white rounded-lg max-w-[500px]">
             {/* Header */}
-            <h2 className="text-2xl lg:text-4xl text-primary dark:text-white font-semibold">
+            <h2 className="text-2xl md:text-4xl text-primary dark:text-white font-semibold">
               Hi, I'm <span className="text-primary">Joshua</span>
             </h2>
             <br />
