@@ -12,7 +12,7 @@ export default function PortfolioComponent() {
     }, [projects])
 
     return (
-      <div id='portfolio' className="h-auto w-auto flex flex-col items-center p-20">
+      <div id='portfolio' className="h-auto w-auto flex flex-col items-center px-20">
         <h1 className="text-3xl md:text-5xl text-primary font-semibold mb-4 md:mb-10">Portfolio</h1>
         <div className="flex flex-col lg:grid lg:grid-cols-2 gap-8">
           {projects.map((project) => (
