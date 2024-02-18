@@ -15,7 +15,7 @@ export default function AboutComponent() {
 
     return (
 
-      <div id="about" className="flex items-start justify-center h-full w-auto px-20 pt-20 pb-40">
+      <div id="about" className="flex items-start justify-center h-full w-full px-20 pt-20 pb-40 border border-white">
         <div className="flex flex-col items-center justify-start lg:flex-row gap-10 h-auto w-auto">
           {/* Header and Bio container */}
           <div className="flex flex-col items-center lg:items-start lg:text-left lg:text-lg text-black dark:text-white rounded-lg max-w-[500px]">
@@ -64,7 +64,7 @@ export default function AboutComponent() {
             <img
               src={GrassHeadshot}
               alt="Headshot on grass with blurred background"
-              className={`h-auto w-auto max-h-[400px] min-w-[300px] cursor-pointer shadow-lg shadow-gray dark:shadow-darkGray rounded-2xl ${
+              className={`h-auto w-auto max-h-[400px] min-w-[300px] cursor-pointer shadow-lg shadow-gray dark:shadow-black rounded-2xl ${
                 !showImg && "hidden"
               }`}
               onClick={toggleImg}
@@ -72,7 +72,7 @@ export default function AboutComponent() {
             <img
               src={SaxImage}
               alt="Joshua standing against a black wall holding a saxophone"
-              className={`h-auto w-auto max-h-[400px] min-w-[300px] cursor-pointer shadow-lg shadow-gray dark:shadow-darkGray rounded-2xl ${
+              className={`h-auto w-auto max-h-[400px] min-w-[300px] cursor-pointer shadow-lg shadow-gray dark:shadow-black rounded-2xl ${
                 showImg && "hidden"
               }`}
               onClick={toggleImg}
