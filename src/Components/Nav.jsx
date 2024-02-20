@@ -19,10 +19,10 @@ import {
 
 // Icons for the navbar and hamburger menu
 const navIcons = [
-  { id: generateId(), name: "Home", icon: MdHome },
-  { id: generateId(), name: "About", icon: MdAccountCircle },
-  { id: generateId(), name: "Portfolio", icon: AiOutlineAppstore },
-  { id: generateId(), name: "Contact", icon: MdEmail },
+  { id: generateId(), name: "home", icon: MdHome },
+  { id: generateId(), name: "about", icon: MdAccountCircle },
+  { id: generateId(), name: "portfolio", icon: AiOutlineAppstore },
+  { id: generateId(), name: "contact", icon: MdEmail },
 ];
 
 
@@ -49,7 +49,7 @@ export default function Nav({ handleThemeChange }) {
               <LinkScroll
                 className="peer"
                 activeClass="outline outline-2 rounded-full text-primary"
-                to={`${button.name.toLowerCase()}`}
+                to={`${button.name}`}
                 spy={true}
                 smooth={true}
                 offset={button.name === 'Home' ? -175 : -75}
