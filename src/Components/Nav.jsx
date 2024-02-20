@@ -52,7 +52,7 @@ export default function Nav({ handleThemeChange }) {
                 to={`${button.name}`}
                 spy={true}
                 smooth={true}
-                offset={button.name === 'Home' ? -175 : -75}
+                offset={-125}
                 duration={500}
               >
                 <button.icon
