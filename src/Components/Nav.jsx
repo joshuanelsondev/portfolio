@@ -19,10 +19,10 @@ import {
 
 // Icons for the navbar and hamburger menu
 const navIcons = [
-  { id: generateId(), name: "Home", icon: MdHome },
-  { id: generateId(), name: "About", icon: MdAccountCircle },
-  { id: generateId(), name: "Portfolio", icon: AiOutlineAppstore },
-  { id: generateId(), name: "Contact", icon: MdEmail },
+  { id: generateId(), name: "home", icon: MdHome },
+  { id: generateId(), name: "about", icon: MdAccountCircle },
+  { id: generateId(), name: "portfolio", icon: AiOutlineAppstore },
+  { id: generateId(), name: "contact", icon: MdEmail },
 ];
 
 
@@ -49,10 +49,10 @@ export default function Nav({ handleThemeChange }) {
               <LinkScroll
                 className="peer"
                 activeClass="outline outline-2 rounded-full text-primary"
-                to={`${button.name.toLowerCase()}`}
+                to={`${button.name}`}
                 spy={true}
                 smooth={true}
-                offset={button.name === 'Home' ? -175 : -75}
+                offset={-125}
                 duration={500}
               >
                 <button.icon
@@ -93,7 +93,7 @@ export default function Nav({ handleThemeChange }) {
       >
         <AiOutlineMenu
           onClick={toggleNav}
-          className={`md:hidden text-black hover:scale-110 cursor-pointer ${
+          className={`md:hidden text-primary hover:scale-110 cursor-pointer ${
             showMiniNav
               ? "duration-500 ease-out -translate-x-10"
               : "ease-in duration-600 translate-x-6"
@@ -127,7 +127,7 @@ export default function Nav({ handleThemeChange }) {
                     to={`${button.name.toLowerCase()}`}
                     spy={true}
                     smooth={true}
-                    offset={-100}
+                    offset={-50}
                     duration={500}
                   >
                     <button.icon
