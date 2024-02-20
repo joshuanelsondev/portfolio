@@ -93,7 +93,7 @@ export default function Nav({ handleThemeChange }) {
       >
         <AiOutlineMenu
           onClick={toggleNav}
-          className={`md:hidden text-black hover:scale-110 cursor-pointer ${
+          className={`md:hidden text-primary hover:scale-110 cursor-pointer ${
             showMiniNav
               ? "duration-500 ease-out -translate-x-10"
               : "ease-in duration-600 translate-x-6"
