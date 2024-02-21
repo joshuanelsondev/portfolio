@@ -83,25 +83,7 @@ export default function Nav({ handleThemeChange }) {
         </div>
       </div>
 
-      {/* Hamburger Menu */}
-      <div
-        className={`fixed md:hidden h-12 w-full z-50 top-0 left-0 flex items-center ${
-          showMiniNav
-            ? "bg-none duration-500 ease-out -translate-x-10 "
-            : " dark:bg-dark ease-in duration-500 "
-        }`}
-      >
-        <AiOutlineMenu
-          onClick={toggleNav}
-          className={`md:hidden text-primary hover:scale-110 cursor-pointer ${
-            showMiniNav
-              ? "duration-500 ease-out -translate-x-10"
-              : "ease-in duration-600 translate-x-6"
-          }`}
-          size={24}
-        />
-      </div>
-      {/* Smaller screen nav bar */}
+    {/* Smaller screen nav bar */}
       <div
         className={`fixed bg-primary bottom-0 flex items-center h-10 w-full p-2 left-0 z-50 md:hidden ${
           showMiniNav
