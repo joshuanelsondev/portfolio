@@ -13,6 +13,7 @@ import {
   MdApps
 } from "react-icons/md"; 
 import {
+  AiFillAppstore,
   AiOutlineMenu,
 } from "react-icons/ai";
 
@@ -20,7 +21,7 @@ import {
 const navIcons = [
   { id: generateId(), name: "home", icon: MdHome },
   { id: generateId(), name: "about", icon: MdAccountCircle },
-  { id: generateId(), name: "portfolio", icon: MdApps },
+  { id: generateId(), name: "portfolio", icon: AiFillAppstore },
   { id: generateId(), name: "contact", icon: MdEmail },
 ];
 
