@@ -15,7 +15,7 @@ export default function AboutComponent() {
 
     return (
 
-      <div id="about" className="flex items-start justify-center h-full min-h-[600px] w-full">
+      <div id="about" className="flex items-start justify-center h-full min-h-[600px] w-full mb-16">
         <div className="flex flex-col items-center justify-start lg:flex-row gap-10 h-auto w-auto">
           {/* Header and Bio container */}
           <div className="flex flex-col items-center lg:items-start lg:text-left lg:text-lg text-black dark:text-white rounded-lg max-w-[500px]">
@@ -56,7 +56,7 @@ export default function AboutComponent() {
                 solutions. Let's build something amazing together! Joshua Nelson */}
             </p>
             <p className="text-primary font-semibold mt-4">
-              Web Developer | Musician | Educator
+              Developer | Musician | Educator
             </p>
           </div>
           {/* Images to toggle between */}

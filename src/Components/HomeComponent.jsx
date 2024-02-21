@@ -36,11 +36,11 @@ export default function HomeComponent() {
 
     return (
       <div id='home' className="h-full min-h-[600px] w-full min-w-fit z-10 pt-10">
-        <div className="flex flex-col items-center gap-4">
+        <div className="flex flex-col items-center gap-8">
           <img
             src={PursuitHeadshot}
             alt="Headshot with green background"
-            className="h-[300px] 2xl:h-[400px] min-w-[100px] rounded-3xl pt-8 px-4 bg-primary dark:bg-primary shadow-xl shadow-gray dark:shadow-black"
+            className="h-[300px] 2xl:h-[400px] min-w-[100px] rounded-3xl pt-8 px-4 bg-primary dark:bg-primary shadow-xl z-10 shadow-gray dark:shadow-black"
           />
           <div className="flex flex-col w-auto h-auto z-10 text-center">
             <h1 className="text-4xl font-semibold sm:text-5xl 2xl:text-6xl text-primary drop-shadow-xl">

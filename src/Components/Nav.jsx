@@ -10,10 +10,10 @@ import {
   MdEmail,
   MdOutlineDarkMode,
   MdOutlineLightMode,
-  MdWest,
+  MdApps
 } from "react-icons/md"; 
 import {
-  AiOutlineAppstore,
+  AiFillAppstore,
   AiOutlineMenu,
 } from "react-icons/ai";
 
@@ -21,7 +21,7 @@ import {
 const navIcons = [
   { id: generateId(), name: "home", icon: MdHome },
   { id: generateId(), name: "about", icon: MdAccountCircle },
-  { id: generateId(), name: "portfolio", icon: AiOutlineAppstore },
+  { id: generateId(), name: "portfolio", icon: AiFillAppstore },
   { id: generateId(), name: "contact", icon: MdEmail },
 ];
 
@@ -83,47 +83,29 @@ export default function Nav({ handleThemeChange }) {
         </div>
       </div>
 
-      {/* Hamburger Menu */}
+    {/* Smaller screen nav bar */}
       <div
-        className={`fixed md:hidden h-12 w-full z-50 top-0 left-0 flex items-center ${
+        className={`fixed bg-primary bottom-0 flex items-center h-10 w-full p-2 left-0 z-50 md:hidden ${
           showMiniNav
-            ? "bg-none duration-500 ease-out -translate-x-10 "
-            : "bg-white dark:bg-dark ease-in duration-500 "
-        }`}
-      >
-        <AiOutlineMenu
-          onClick={toggleNav}
-          className={`md:hidden text-primary hover:scale-110 cursor-pointer ${
-            showMiniNav
-              ? "duration-500 ease-out -translate-x-10"
-              : "ease-in duration-600 translate-x-6"
-          }`}
-          size={24}
-        />
-      </div>
-      {/* Smaller screen nav bar */}
-      <div
-        className={`fixed bg-primary bg-opacity-90 -left-20 top-0 flex flex-col items-center h-full w-10 pt-4  z-50 lg:hidden ${
-          showMiniNav
-            ? "duration-500 ease-in translate-x-20"
+            ? "duration-500 ease-in "
             : "duration-500 ease-in-out"
         }`}
       >
         {/* Arrow for closing side nav */}
-        <MdWest
+        {/* <MdWest
           className="text-gray hover:scale-110 cursor-pointer left-5 top-4"
           onClick={toggleNav}
           size={20}
-        />
+        /> */}
 
         {
-          <div className={`grid h-full w-20`}>
+          <div className={`flex justify-around w-full text-darkGray px-4`}>
             {navIcons.map((button) => {
               return (
-                <div key={button.id} className="flex flex-col items-center justify-center">
+                <div key={button.id} className="flex">
                   <LinkScroll
                     className="peer"
-                    activeClass="outline rounded-full text-gray"
+                    activeClass="outline rounded "
                     to={`${button.name.toLowerCase()}`}
                     spy={true}
                     smooth={true}
@@ -131,7 +113,7 @@ export default function Nav({ handleThemeChange }) {
                     duration={500}
                   >
                     <button.icon
-                      className="text-gray rounded-full p-1 cursor-pointer"
+                      className="text-darkGray rounded-full p-1 cursor-pointer"
                       size={25}
                     />
                   </LinkScroll>
@@ -139,12 +121,12 @@ export default function Nav({ handleThemeChange }) {
               );
             })}
             {/* Theme buttons */}
-            <div className="flex flex-col items-center justify-center">
+            <div className="flex flex-col items-center justify-center pr-2">
               {/* Dark theme nav button */}
               <div className="absolute invisible dark:visible">
                 <MdOutlineDarkMode
                   onClick={() => handleThemeChange("light")}
-                  className="peer text-gray hover:outline hover:dark:outline-gray rounded-full p-1 cursor-pointer"
+                  className="peer text-darkGray hover:outline hover:dark:outline-gray rounded-full p-1 cursor-pointer"
                   size={25}
                 />
               </div>
@@ -152,7 +134,7 @@ export default function Nav({ handleThemeChange }) {
               <div className="absolute dark:invisible">
                 <MdOutlineLightMode
                   onClick={() => handleThemeChange("dark")}
-                  className="peer text-gray hover:outline outline-gray rounded-full p-1 cursor-pointer"
+                  className="peer text-darkGray hover:outline outline-gray rounded-full p-1 cursor-pointer"
                   size={25}
                 />
               </div>
