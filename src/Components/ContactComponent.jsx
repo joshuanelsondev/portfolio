@@ -26,8 +26,8 @@ export default function ContactComponent () {
     };
 
     return (
-      <div id='contact' className="h-full min-h-[600px] w-full grid grid-rows-[100px] text-white pt-10">
-        <h2 className="text-4xl lg:text-6xl text-primary ">Contact</h2>
+      <div id='contact' className="h-full min-h-[600px] w-full flex flex-col text-white ">
+        <h2 className="text-4xl lg:text-6xl text-primary h-20">Contact me</h2>
         <form className="flex flex-col gap-8" ref={form} onSubmit={sendEmail}>
           <div className='grid gap-2'>
             <label>Name</label>
@@ -41,7 +41,7 @@ export default function ContactComponent () {
             <label>Message</label>
             <textarea className='rounded h-40 text-black' name="message" />
           </div> 
-          <input className='bg-primary rounded' type="submit" value="Send" />
+          <input className='bg-primary rounded p-2 text-darkGray font-semibold' type="submit" value="Send" />
         </form>
       </div>
     );
