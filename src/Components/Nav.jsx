@@ -85,7 +85,7 @@ export default function Nav({ handleThemeChange }) {
 
     {/* Smaller screen nav bar */}
       <div
-        className={`fixed bg-primary bottom-0 flex items-center h-10 w-full p-2 left-0 z-50 md:hidden ${
+        className={`fixed bg-primary bottom-0 flex items-center h-14 w-full p-2 left-0 z-50 md:hidden ${
           showMiniNav
             ? "duration-500 ease-in "
             : "duration-500 ease-in-out"
@@ -114,7 +114,7 @@ export default function Nav({ handleThemeChange }) {
                   >
                     <button.icon
                       className="text-darkGray rounded-full p-1 cursor-pointer"
-                      size={25}
+                      size={30}
                     />
                   </LinkScroll>
                 </div>
@@ -127,7 +127,7 @@ export default function Nav({ handleThemeChange }) {
                 <MdOutlineDarkMode
                   onClick={() => handleThemeChange("light")}
                   className="peer text-darkGray hover:outline hover:dark:outline-gray rounded-full p-1 cursor-pointer"
-                  size={25}
+                  size={30}
                 />
               </div>
               {/* Light theme nav button */}
@@ -135,7 +135,7 @@ export default function Nav({ handleThemeChange }) {
                 <MdOutlineLightMode
                   onClick={() => handleThemeChange("dark")}
                   className="peer text-darkGray hover:outline outline-gray rounded-full p-1 cursor-pointer"
-                  size={25}
+                  size={30}
                 />
               </div>
             </div>
