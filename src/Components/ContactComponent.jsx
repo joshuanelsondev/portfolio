@@ -22,9 +22,11 @@ export default function ContactComponent () {
       .then(
         (result) => {
           console.log(result.text);
-          setInterval(() => {
-            setBtnMessage('Send Email');
-          }, 1000)
+          setBtnMessage('Message Sent!');
+          setTimeout(() => {
+            setBtnMessage('Send');
+          }, 2000);
+
         },
         (error) => {
           console.log(error.text);
