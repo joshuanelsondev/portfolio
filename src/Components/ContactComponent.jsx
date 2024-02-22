@@ -8,7 +8,6 @@ const apiKey = import.meta.env.VITE_API_KEY;
 
 export default function ContactComponent () {
   const [btnMessage, setBtnMessage] = useState('Send Email')  
-  console.log(serviceId, templateId, apiKey);
 
   const form = useRef();
 
