@@ -2,13 +2,13 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const serviceId = import.meta.env.SERVICE_ID;
-const templateId = import.meta.env.TEMPLATE_ID;
-const apiKey = import.meta.env.API_KEY;
-console.log(serviceId, templateId, apiKey);
+const serviceId = import.meta.env.VITE_SERVICE_ID;
+const templateId = import.meta.env.VITE_TEMPLATE_ID;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 export default function ContactComponent () {
   const [btnMessage, setBtnMessage] = useState('Send Email')  
+  console.log(serviceId, templateId, apiKey);
 
   const form = useRef();
 
@@ -18,10 +18,10 @@ export default function ContactComponent () {
 
     emailjs
       .sendForm(
-        "service_091zju5",
-        "template_kx2no28",
+        serviceId,
+        templateId,
         form.current,
-        "OBvKElsFehAWv_TZS"
+        apiKey
       )
       .then(
         (result) => {
