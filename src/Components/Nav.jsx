@@ -27,11 +27,7 @@ const navIcons = [
 
 
 export default function Nav({ handleThemeChange }) {
-  const [showMiniNav, setShowMiniNav] = useState(false);
-  // Function to show and hide the smaller screen nav bar
-  const toggleNav = () => {
-    setShowMiniNav(!showMiniNav);
-  };
+
 
   return (
     <div>
@@ -85,11 +81,7 @@ export default function Nav({ handleThemeChange }) {
 
     {/* Smaller screen nav bar */}
       <div
-        className={`fixed bg-primary bottom-0 flex items-center h-14 w-full p-2 left-0 z-50 md:hidden ${
-          showMiniNav
-            ? "duration-500 ease-in "
-            : "duration-500 ease-in-out"
-        }`}
+        className={`fixed bg-primary bottom-0 flex items-center h-14 w-full p-2 left-0 z-50 md:hidden`}
       >
         {/* Arrow for closing side nav */}
         {/* <MdWest

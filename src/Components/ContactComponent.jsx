@@ -38,7 +38,7 @@ export default function ContactComponent () {
   };
 
     return (
-      <div id='contact' className="h-full min-h-[600px] w-full flex flex-col text-white mb-20">
+      <div id='contact' className="h-full min-h-[600px] w-full max-w-[800px] flex flex-col text-white mb-20">
         <h2 className="text-4xl lg:text-6xl text-primary h-20">Contact me</h2>
         <form className="flex flex-col gap-8 rounded-md" ref={form} onSubmit={sendEmail}>
           <div className='grid gap-2'>
