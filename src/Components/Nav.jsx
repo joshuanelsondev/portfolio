@@ -10,21 +10,10 @@ import {
   MdEmail,
   MdOutlineDarkMode,
   MdOutlineLightMode,
-  MdApps
 } from "react-icons/md"; 
 import {
   AiFillAppstore,
-  AiOutlineMenu,
 } from "react-icons/ai";
-
-// Icons for the navbar and hamburger menu
-const navIcons = [
-  { id: generateId(), name: "home", icon: MdHome },
-  { id: generateId(), name: "about", icon: MdAccountCircle },
-  { id: generateId(), name: "portfolio", icon: AiFillAppstore },
-  { id: generateId(), name: "contact", icon: MdEmail },
-];
-
 
 export default function Nav({ handleThemeChange }) {
 
@@ -36,29 +25,82 @@ export default function Nav({ handleThemeChange }) {
         className={`hidden md:flex flex-col fixed top-[30%] left-6 2xl:left-16 pl-4 gap-12 sm:ml-4 z-40`}
       >
         {/* Loop through the nav buttons */}
-        {navIcons.map((button) => {
-          return (
             <div
-              key={button.id}
+              key={generateId()}
               className="flex items-center lg:gap-4 md:gap-1"
             >
               <LinkScroll
                 className="peer"
                 activeClass="outline outline-2 rounded-full text-primary"
-                to={`${button.name}`}
+                to={`home`}
                 spy={true}
                 smooth={true}
                 offset={-125}
                 duration={500}
               >
-                <button.icon
+                <MdHome
                   className="text-primary dark:text-white rounded-full p-2 cursor-pointer"
                   size={40}
                 />
               </LinkScroll>
             </div>
-          );
-        })}
+            <div
+              key={generateId()}
+              className="flex items-center lg:gap-4 md:gap-1"
+            >
+              <LinkScroll
+                className="peer"
+                activeClass="outline outline-2 rounded-full text-primary"
+                to={`about`}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                <MdAccountCircle
+                  className="text-primary dark:text-white rounded-full p-2 cursor-pointer"
+                  size={40}
+                />
+              </LinkScroll>
+            </div>
+            <div
+              key={generateId()}
+              className="flex items-center lg:gap-4 md:gap-1"
+            >
+              <LinkScroll
+                className="peer"
+                activeClass="outline outline-2 rounded-full text-primary"
+                to={`portfolio`}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                <AiFillAppstore
+                  className="text-primary dark:text-white rounded-full p-2 cursor-pointer"
+                  size={40}
+                />
+              </LinkScroll>
+            </div>
+            <div
+              key={generateId()}
+              className="flex items-center lg:gap-4 md:gap-1"
+            >
+              <LinkScroll
+                className="peer"
+                activeClass="outline outline-2 rounded-full text-primary"
+                to={`contact`}
+                spy={true}
+                smooth={true}
+                offset={-50}
+                duration={500}
+              >
+                <MdEmail
+                  className="text-primary dark:text-white rounded-full p-2 cursor-pointer"
+                  size={40}
+                />
+              </LinkScroll>
+            </div>
         <div className="relative">
           {/* Dark theme nav button */}
           <div className="absolute invisible dark:visible flex items-center lg:gap-4 md:gap-1">
