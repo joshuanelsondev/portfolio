@@ -2,10 +2,9 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 
-const serviceId = import.meta.env.SERVICE_ID;
-const templateId = import.meta.env.TEMPLATE_ID;
-const apiKey = import.meta.env.API_KEY;
-console.log(serviceId, templateId, apiKey);
+const serviceId = import.meta.env.VITE_SERVICE_ID;
+const templateId = import.meta.env.VITE_TEMPLATE_ID;
+const apiKey = import.meta.env.VITE_API_KEY;
 
 export default function ContactComponent () {
   const [btnMessage, setBtnMessage] = useState('Send Email')  
@@ -18,10 +17,10 @@ export default function ContactComponent () {
 
     emailjs
       .sendForm(
-        "service_091zju5",
-        "template_kx2no28",
+        serviceId,
+        templateId,
         form.current,
-        "OBvKElsFehAWv_TZS"
+        apiKey
       )
       .then(
         (result) => {
@@ -39,7 +38,7 @@ export default function ContactComponent () {
   };
 
     return (
-      <div id='contact' className="h-full min-h-[600px] w-full flex flex-col text-white mb-20">
+      <div id='contact' className="h-full min-h-[600px] w-full max-w-[800px] flex flex-col text-white mb-20">
         <h2 className="text-4xl lg:text-6xl text-primary h-20">Contact me</h2>
         <form className="flex flex-col gap-8 rounded-md" ref={form} onSubmit={sendEmail}>
           <div className='grid gap-2'>
