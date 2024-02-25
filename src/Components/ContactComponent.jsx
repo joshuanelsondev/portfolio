@@ -38,22 +38,22 @@ export default function ContactComponent () {
   };
 
     return (
-      <div id='contact' className="h-full min-h-[600px] w-full max-w-[800px] flex flex-col text-white mb-20">
-        <h2 className="text-4xl lg:text-6xl text-primary h-20">Contact me</h2>
+      <div id='contact' className="h-full min-h-[600px] w-full max-w-[800px] flex flex-col text-white mb-20 bg-[#ccc] rounded-md mt-20 p-4">
+        <h2 className="text-3xl lg:text-6xl text-black h-20">Contact me</h2>
         <form className="flex flex-col gap-8 rounded-md" ref={form} onSubmit={sendEmail}>
           <div className='grid gap-2'>
-            <label htmlFor='from_name' className='text-black dark:text-white'>Name</label>
-            <input name='from_name' className='rounded text-black px-2 outline outline-gray' type="text" required />
+            <label htmlFor='from_name' className='text-black dark:text-black'>Name</label>
+            <input name='from_name' className='rounded border border-[#ccc] box-border text-black outline-primary py-1 px-3 shadow' type="text" required />
           </div> 
           <div className='grid gap-2'>
-            <label className='text-black dark:text-white'>Email</label>
-            <input className='rounded text-black px-2 outline outline-gray' type="email" name="user_email" required />
+            <label className='text-black dark:text-black'>Email</label>
+            <input className='rounded border border-[#ccc] box-border text-black outline-primary py-1 px-3 shadow' type="email" name="user_email" required />
           </div> 
           <div className='grid gap-2'>
-            <label htmlFor='message' className='text-black dark:text-white'>Message</label>
-            <textarea name='message' className='rounded h-40 text-black px-2 outline outline-gray' required />
+            <label htmlFor='message' className='text-black dark:text-black'>Message</label>
+            <textarea name='message' className='rounded h-40 text-black py-1 px-3 border border-[#ccc] shadow outline-primary ' required />
           </div> 
-          <input className='bg-primary rounded p-2 text-darkGray font-semibold' type="submit" value={btnMessage} />
+          <input className='bg-primary rounded p-2 text-darkGray font-semibold shadow shadow-gray' type="submit" value={btnMessage} />
         </form>
       </div>
     );
