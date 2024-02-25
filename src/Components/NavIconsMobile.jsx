@@ -87,7 +87,7 @@ export default function NavIconsMobile({handleThemeChange}) {
                 to={`contact`}
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-200}
                 duration={500}
               >
                 <MdEmail
