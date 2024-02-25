@@ -73,20 +73,20 @@ const projectData = [
     created_on: "2022-10-03T04:00:00.000Z",
     updated_on: null,
   },
-  {
-    id: "42dfe231-1e5d-42e1-983d-d732b23037d3",
-    title: "Etch-a-Sketch",
-    description:
-      'A personal project I took on through the Odin Project that focused on incorporating user-interaction in a sketch-style environment. I was challenged to use"JavaScript"in a way that would simulate a pen traveling across an etch-a-sketch board.',
-    tech: ["JavaScript", "HTML", "CSS"],
-    image:
-      "https://github.com/joshuanelsondev/etch-a-sketch/blob/main/images/etch-a-sketch.png?raw=true",
-    github_link: "https://github.com/joshuanelsondev/etch-a-sketch",
-    demo_link: "https://joshuanelsondev.github.io/etch-a-sketch/",
-    is_favorite: false,
-    created_on: "2022-06-25T04:00:00.000Z",
-    updated_on: null,
-  },
+  // {
+  //   id: "42dfe231-1e5d-42e1-983d-d732b23037d3",
+  //   title: "Etch-a-Sketch",
+  //   description:
+  //     'A personal project I took on through the Odin Project that focused on incorporating user-interaction in a sketch-style environment. I was challenged to use"JavaScript"in a way that would simulate a pen traveling across an etch-a-sketch board.',
+  //   tech: ["JavaScript", "HTML", "CSS"],
+  //   image:
+  //     "https://github.com/joshuanelsondev/etch-a-sketch/blob/main/images/etch-a-sketch.png?raw=true",
+  //   github_link: "https://github.com/joshuanelsondev/etch-a-sketch",
+  //   demo_link: "https://joshuanelsondev.github.io/etch-a-sketch/",
+  //   is_favorite: false,
+  //   created_on: "2022-06-25T04:00:00.000Z",
+  //   updated_on: null,
+  // },
 ];
 
 export { projectData };
