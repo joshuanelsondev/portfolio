@@ -1,6 +1,7 @@
 // Nav.jsx
 
 import NavIcons from "./NavIcons";
+import NavIconsMobile from "./NavIconsMobile";
 import PropTypes from "prop-types";
 import {
   MdDarkMode,
@@ -48,7 +49,7 @@ export default function Nav({ handleThemeChange }) {
 
         
           <div className={`flex justify-around w-full text-darkGray px-4`}>
-            <NavIcons />
+            <NavIconsMobile handleThemeChange={handleThemeChange} />
             {/* <div
               key={generateId()}
               className="flex items-center lg:gap-4 md:gap-1"
@@ -125,25 +126,7 @@ export default function Nav({ handleThemeChange }) {
                 />
               </LinkScroll>
             </div> */}
-            {/* Theme buttons */}
-            <div className="flex flex-col items-center justify-center pr-2">
-              {/* Dark theme nav button */}
-              <div className="absolute invisible dark:visible">
-                <MdDarkMode
-                  onClick={() => handleThemeChange("light")}
-                  className="peer text-darkGray hover:outline hover:dark:outline-gray rounded-full p-1 cursor-pointer"
-                  size={30}
-                />
-              </div>
-              {/* Light theme nav button */}
-              <div className="absolute dark:invisible">
-                <MdLightMode
-                  onClick={() => handleThemeChange("dark")}
-                  className="peer text-darkGray hover:outline outline-gray rounded-full p-1 cursor-pointer"
-                  size={30}
-                />
-              </div>
-            </div>
+           
           </div>
         
       </div>
