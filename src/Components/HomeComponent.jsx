@@ -36,17 +36,17 @@ export default function HomeComponent() {
 
     return (
       <div id='home' className="h-full min-h-[600px] w-full min-w-fit z-10 pt-10">
-        <div className="flex flex-col md:flex-row-reverse items-center md:justify-evenly gap-8">
+        <div className="flex flex-col lg:flex-row-reverse items-center md:justify-evenly ">
           <img
             src={PursuitHeadshot}
             alt="Headshot with green background"
-            className="h-[300px] md:h-[400px] min-w-[100px]  bg-darkGray z-10 rounded-2xl  dark:shadow-black"
+            className="h-[250px] sm:h-[350px] lg:h-[400px] w-auto  bg-darkGray z-10 rounded-2xl  dark:shadow-black"
           />
-          <div className="flex flex-col w-auto h-auto z-10 items-start">
-            <h1 className="text-4xl font-semibold sm:text-6xl text-primary drop-shadow-xl md:pl-2">
+          <div className="flex flex-col w-fit h-auto z-10 items-center lg:items-start">
+            <h1 className="text-4xl font-semibold sm:text-5xl lg:text-6xl text-primary drop-shadow-xl md:pl-2 w-full">
               Joshua Nelson
             </h1>
-            <h2 className="text-2xl sm:text-3xl 2xl:text-4xl mt-2 font-normal text-darkGray dark:text-white md:pl-2">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl mt-2 font-normal text-darkGray dark:text-white md:pl-2 w-full text-center lg:text-start">
               <span className="text-primary">Software</span> Developer
             </h2>
             {/* Icons iteration */}
@@ -55,7 +55,6 @@ export default function HomeComponent() {
                 return (
                   <div
                     key={icon.id}
-                    className="flex flex-col items-center gap-2"
                   >
                     <a
                       className="peer"
