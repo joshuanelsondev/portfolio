@@ -15,8 +15,8 @@ export default function AboutComponent() {
 
     return (
 
-      <div id="about" className="flex items-start md:items-center justify-center h-full min-h-[600px] w-full mb-16 md:mt-24">
-        <div className="flex flex-col items-center justify-start lg:flex-row gap-10 h-auto w-auto">
+      <div id="about" className="flex items-start md:justify-evenly md:items-center h-full min-h-[600px] w-full mb-16 md:mt-24">
+        <div className="flex flex-col items-center lg:flex-row lg:justify-evenly gap-10 h-auto w-full">
           {/* Header and Bio container */}
           <div className="flex flex-col items-center lg:items-start lg:text-left lg:text-lg text-black dark:text-white rounded-lg max-w-[500px]">
             {/* Header */}
