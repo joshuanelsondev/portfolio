@@ -1,5 +1,5 @@
 // HomePage.jsx
-import { Link } from "react-router-dom";
+import { Link } from "react-scroll";
 import { v4 as generateId } from "uuid";
 import {
   AiFillLinkedin,
@@ -63,7 +63,7 @@ export default function HomeComponent() {
                       rel="noreferrer"
                     >
                       <icon.logo
-                        className="p-2 text-primary h-9 sm:h-10 cursor-pointer hover:border-b border-b-primary"
+                        className="p-2 text-primary h-9 sm:h-10 cursor-pointer sm:hover:border-b border-b-primary"
                         size={40}
                       />
                     </a>
@@ -71,10 +71,11 @@ export default function HomeComponent() {
                 );
               })}
             </div>
-            {/* <div>
-              <Link className='text-primary'>About</Link>
-              <Link className='text-primary'>Portfolio</Link>
-            </div> */}
+            <div className='flex gap-4 mt-4'>
+              <Link to={'about'} smooth={true} duration={500} className='text-primary font-semibold sm:hover:underline underline-offset-4 cursor-pointer'>About me</Link>
+              <Link to={'portfolio'} smooth={true} duration={500} className='text-primary font-semibold sm:hover:underline underline-offset-4 cursor-pointer'>Portfolio</Link>
+              <Link className='text-primary font-semibold hover:underline underline-offset-4 cursor-pointer'>Resume</Link>
+            </div>
           </div>
         </div>
       </div>
