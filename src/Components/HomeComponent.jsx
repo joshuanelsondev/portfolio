@@ -1,5 +1,5 @@
 // HomePage.jsx
-
+import { Link } from "react-router-dom";
 import { v4 as generateId } from "uuid";
 import {
   AiFillLinkedin,
@@ -35,7 +35,7 @@ const icons = [
 export default function HomeComponent() {
 
     return (
-      <div id='home' className="h-full min-h-[600px] w-full min-w-fit z-10 pt-10">
+      <div id='home' className="h-full min-h-[600px] w-full min-w-fit z-10 pt-10 lg:grid">
         <div className="flex flex-col lg:flex-row-reverse items-center md:justify-evenly ">
           <img
             src={PursuitHeadshot}
@@ -71,6 +71,10 @@ export default function HomeComponent() {
                 );
               })}
             </div>
+            {/* <div>
+              <Link className='text-primary'>About</Link>
+              <Link className='text-primary'>Portfolio</Link>
+            </div> */}
           </div>
         </div>
       </div>
