@@ -27,7 +27,7 @@ export default function NavIcons() {
                 to={`home`}
                 spy={true}
                 smooth={true}
-                offset={-125}
+                offset={-50}
                 duration={500}
               >
                 <MdHome

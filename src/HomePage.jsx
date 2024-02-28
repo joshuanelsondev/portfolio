@@ -9,7 +9,7 @@ import Nav from "./Components/Nav";
 export default function HomePage({ handleThemeChange }) {
 
     return (
-      <div className="h-full w-full min-w-fit flex flex-col items-center p-8 sm:p-20">
+      <div className="h-full w-full min-w-fit flex flex-col items-center px-8 py-32 sm:p-20">
           <Nav handleThemeChange={handleThemeChange} />
           <HomeComponent />
           <AboutComponent />
