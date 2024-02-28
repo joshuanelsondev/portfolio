@@ -30,7 +30,7 @@ export default function NavIconsMobile({handleThemeChange}) {
                 to={`home`}
                 spy={true}
                 smooth={true}
-                offset={-125}
+                offset={-10}
                 duration={500}
               >
                 <MdHome
@@ -49,7 +49,7 @@ export default function NavIconsMobile({handleThemeChange}) {
                 to={`about`}
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-10}
                 duration={500}
               >
                 <MdAccountCircle
@@ -68,7 +68,7 @@ export default function NavIconsMobile({handleThemeChange}) {
                 to={`portfolio`}
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-10}
                 duration={500}
               >
                 <AiFillAppstore
@@ -87,7 +87,7 @@ export default function NavIconsMobile({handleThemeChange}) {
                 to={`contact`}
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-10}
                 duration={500}
               >
                 <MdEmail
