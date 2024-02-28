@@ -27,7 +27,7 @@ export default function NavIcons() {
                 to={`home`}
                 spy={true}
                 smooth={true}
-                offset={-125}
+                offset={-50}
                 duration={500}
               >
                 <MdHome
@@ -84,7 +84,7 @@ export default function NavIcons() {
                 to={`contact`}
                 spy={true}
                 smooth={true}
-                offset={-100}
+                offset={-50}
                 duration={500}
               >
                 <MdEmail
