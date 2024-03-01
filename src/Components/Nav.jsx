@@ -40,93 +40,9 @@ export default function Nav({ handleThemeChange }) {
       <div
         className={`fixed bg-primary bottom-0 flex items-center h-14 w-full p-2 left-0 z-50 md:hidden`}
       >
-        {/* Arrow for closing side nav */}
-        {/* <MdWest
-          className="text-gray hover:scale-110 cursor-pointer left-5 top-4"
-          onClick={toggleNav}
-          size={20}
-        /> */}
-
-        
+        {/* Arrow for closing side nav */}        
           <div className={`flex justify-around w-full text-darkGray px-4`}>
-            <NavIconsMobile handleThemeChange={handleThemeChange} />
-            {/* <div
-              key={generateId()}
-              className="flex items-center lg:gap-4 md:gap-1"
-            >
-              <LinkScroll
-                className="peer"
-                activeClass="outline outline-2 rounded-full text-primary"
-                to={`home`}
-                spy={true}
-                smooth={true}
-                offset={-125}
-                duration={500}
-              >
-                <MdHome
-                  className="text-darkGray rounded-full p-2 cursor-pointer"
-                  size={40}
-                />
-              </LinkScroll>
-            </div>
-            <div
-              key={generateId()}
-              className="flex items-center lg:gap-4 md:gap-1"
-            >
-              <LinkScroll
-                className="peer"
-                activeClass="outline outline-2 rounded-full text-primary"
-                to={`about`}
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-              >
-                <MdAccountCircle
-                  className="text-darkGray rounded-full p-2 cursor-pointer"
-                  size={40}
-                />
-              </LinkScroll>
-            </div>
-            <div
-              key={generateId()}
-              className="flex items-center lg:gap-4 md:gap-1"
-            >
-              <LinkScroll
-                className="peer"
-                activeClass="outline outline-2 rounded-full text-primary"
-                to={`portfolio`}
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-              >
-                <AiFillAppstore
-                  className="text-darkGray rounded-full p-2 cursor-pointer"
-                  size={40}
-                />
-              </LinkScroll>
-            </div>
-            <div
-              key={generateId()}
-              className="flex items-center lg:gap-4 md:gap-1"
-            >
-              <LinkScroll
-                className="peer"
-                activeClass="outline outline-2 rounded-full text-primary"
-                to={`contact`}
-                spy={true}
-                smooth={true}
-                offset={-50}
-                duration={500}
-              >
-                <MdEmail
-                  className="text-darkGray rounded-full p-2 cursor-pointer"
-                  size={40}
-                />
-              </LinkScroll>
-            </div> */}
-           
+            <NavIconsMobile handleThemeChange={handleThemeChange} />       
           </div>
         
       </div>
