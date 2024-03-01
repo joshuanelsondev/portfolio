@@ -43,15 +43,15 @@ export default function ContactComponent () {
         <form className="flex flex-col gap-8 rounded-md" ref={form} onSubmit={sendEmail}>
           <div className='grid gap-2'>
             <label htmlFor='from_name' className='text-black dark:text-black'>Name</label>
-            <input name='from_name' className='rounded border border-[#ccc] box-border text-black outline-primary py-1 px-3 shadow' type="text" required />
+            <input name='from_name' id='from_name' className='rounded border border-[#ccc] box-border text-black outline-primary py-1 px-3 shadow' type="text" required />
           </div> 
           <div className='grid gap-2'>
-            <label className='text-black dark:text-black'>Email</label>
-            <input className='rounded border border-[#ccc] box-border text-black outline-primary py-1 px-3 shadow' type="email" name="user_email" required />
+            <label htmlFor="email" className='text-black dark:text-black'>Email</label>
+            <input className='rounded border border-[#ccc] box-border text-black outline-primary py-1 px-3 shadow' type="email" name="user_email" id='email' required />
           </div> 
           <div className='grid gap-2'>
             <label htmlFor='message' className='text-black dark:text-black'>Message</label>
-            <textarea name='message' className='rounded h-60 text-black py-1 px-3 border border-[#ccc] shadow outline-primary resize-none' required />
+            <textarea name='message' id='message' className='rounded h-60 text-black py-1 px-3 border border-[#ccc] shadow outline-primary resize-none' required />
           </div> 
           <input className='bg-primary rounded p-2 text-darkGray font-semibold shadow shadow-gray md:bg-opacity-90 md:hover:bg-opacity-100 cursor-pointer' type="submit" value={btnMessage} />
         </form>
