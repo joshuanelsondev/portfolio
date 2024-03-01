@@ -1,5 +1,6 @@
 // HomePage.jsx
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
+import { Link as LinkScroll } from "react-scroll";
 import { v4 as generateId } from "uuid";
 import {
   AiFillLinkedin,
@@ -15,21 +16,25 @@ const icons = [
     id: generateId(),
     logo: AiFillLinkedin,
     link: "https://www.linkedin.com/in/joshuanelsondev",
+    aria: "Link to Joshua Nelson's LinkedIn profile"
   },
   {
     id: generateId(),
     logo: AiOutlineGithub,
     link: "https://github.com/joshuanelsondev",
+    aria: "Link to Joshua Nelson's GitHub profile"
   },
   {
     id: generateId(),
     logo: AiFillFacebook,
     link: "https://www.facebook.com/JoshuaNelsonSax",
+    aria: "Link to Joshua Nelson's Facebook page"
   },
   {
     id: generateId(),
     logo: AiFillInstagram,
     link: "https://www.instagram.com/joshuanelsonmusic/",
+    aria: "Link to Joshua Nelson's Instagram page"
   },
 ];
 export default function HomeComponent() {
@@ -43,14 +48,14 @@ export default function HomeComponent() {
             className="h-[250px] sm:h-[350px] lg:h-[400px] w-auto  bg-darkGray z-10 rounded-2xl  dark:shadow-black"
           />
           <div className="flex flex-col w-fit h-auto z-10 items-center lg:items-start">
-            <h1 className="text-4xl font-semibold sm:text-5xl lg:text-6xl text-primary drop-shadow-xl md:pl-2 w-full">
+            <h1 className="text-4xl font-semibold sm:text-5xl lg:text-6xl text-primary drop-shadow-xl w-full">
               Joshua Nelson
             </h1>
-            <h2 className="text-xl sm:text-2xl lg:text-3xl mt-2 font-normal text-darkGray dark:text-white md:pl-2 w-full text-center lg:text-start">
+            <h2 className="text-xl sm:text-2xl lg:text-3xl mt-2 font-normal text-darkGray dark:text-white w-full text-center lg:text-start">
               <span className="text-primary">Software</span> Developer
             </h2>
             {/* Icons iteration */}
-            <div className="flex mt-4 gap-4 sm:gap-8">
+            <div className="flex mt-4 gap-9 sm:gap-12 md:pl-1">
               {icons.map((icon) => {
                 return (
                   <div
@@ -61,20 +66,20 @@ export default function HomeComponent() {
                       href={`${icon.link}`}
                       target="_blank"
                       rel="noreferrer"
+                    aria-label={`${icon.aria}`}
                     >
                       <icon.logo
-                        className="p-2 text-primary h-9 sm:h-10 cursor-pointer sm:hover:border-b border-b-primary"
-                        size={40}
+                        className=" text-primary cursor-pointer border-b-primary scale-125"
                       />
                     </a>
                   </div>
                 );
               })}
             </div>
-            <div className='flex gap-4 mt-4'>
-              <Link to={'about'} smooth={true} duration={500} className='text-primary font-semibold sm:hover:underline underline-offset-4 cursor-pointer'>About me</Link>
-              <Link to={'portfolio'} smooth={true} duration={500} className='text-primary font-semibold sm:hover:underline underline-offset-4 cursor-pointer'>Portfolio</Link>
-              <Link className='text-primary font-semibold hover:underline underline-offset-4 cursor-pointer'>Resume</Link>
+            <div className='flex gap-4 mt-4 text-sm sm:text-base lg:text-lg'>
+              <LinkScroll to={'about'} smooth={true} duration={500} className='text-primary font-semibold sm:hover:underline underline-offset-4 cursor-pointer'>About me</LinkScroll>
+              <LinkScroll to={'portfolio'} smooth={true} duration={500} className='text-primary font-semibold sm:hover:underline underline-offset-4 cursor-pointer'>Portfolio</LinkScroll>
+              <Link to={'https://joshuanelsondev.github.io/resume/resume.pdf'} className='text-primary font-semibold hover:underline underline-offset-4 cursor-pointer'>Resume</Link>
             </div>
           </div>
         </div>

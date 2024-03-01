@@ -15,12 +15,12 @@ export default function AboutComponent() {
 
     return (
 
-      <div id="about" className="flex items-start md:justify-evenly md:items-center h-full min-h-[600px] w-full mb-16 md:mt-24">
+      <div id="about" className="flex items-start md:justify-evenly md:items-center h-full min-h-[600px] w-full mb-16 sm:mt-24">
         <div className="flex flex-col items-center lg:flex-row lg:justify-evenly gap-10 h-auto w-full">
           {/* Header and Bio container */}
           <div className="flex flex-col items-center lg:items-start lg:text-left lg:text-lg text-black dark:text-white rounded-lg max-w-[500px]">
             {/* Header */}
-            <h2 className="text-2xl md:text-4xl text-primary dark:text-white font-semibold">
+            <h2 className="text-3xl sm:text-4xl text-primary dark:text-white font-semibold">
               Hi, I'm <span className="text-primary">Joshua</span>
             </h2>
             <br />
