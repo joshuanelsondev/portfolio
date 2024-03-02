@@ -20,8 +20,8 @@ export default function AboutComponent() {
           {/* Header and Bio container */}
           <div className="flex flex-col items-center lg:items-start lg:text-left lg:text-lg text-black dark:text-white rounded-lg max-w-[500px]">
             {/* Header */}
-            <h2 className="text-3xl sm:text-4xl text-primary dark:text-white font-semibold">
-              Hi, I'm <span className="text-primary">Joshua</span>
+            <h2 className="text-3xl sm:text-4xl text-darkGray dark:text-white font-semibold">
+              Hi, I'm <span className="text-darkGray dark:text-primary">Joshua</span>
             </h2>
             <br />
             {/* Bio text */}
@@ -32,7 +32,7 @@ export default function AboutComponent() {
               during my time as a fellow at{" "}
               <Link
                 to={"https://www.pursuit.org/hire-from-pursuit"}
-                className="text-primary font-bold hover:underline underline-offset-2"
+                className="text-darkGray dark:text-primary font-bold hover:underline underline-offset-2"
                 target="_blank"
               >
                 Pursuit
@@ -54,9 +54,6 @@ export default function AboutComponent() {
                 knowledge through teaching privately. Explore my website to see my
                 latest projects and join me in creating meaningful digital
                 solutions. Let's build something amazing together! Joshua Nelson */}
-            </p>
-            <p className="text-primary font-semibold mt-4">
-              Developer | Musician | Educator
             </p>
           </div>
           {/* Images to toggle between */}

@@ -48,12 +48,15 @@ export default function HomeComponent() {
             className="h-[250px] sm:h-[350px] lg:h-[400px] w-auto  bg-darkGray z-10 rounded-2xl shadow-lg shadow-darkGray dark:shadow-black"
           />
           <div className="flex flex-col w-fit h-auto z-10 items-center lg:items-start">
-            <h1 className="text-4xl font-semibold sm:text-5xl lg:text-6xl text-darkGray dark:text-primary drop-shadow-xl w-full">
+            <h1 className="text-4xl font-semibold sm:text-5xl lg:text-6xl text-darkGray dark:text-primary drop-shadow-xl w-full text-center">
               Joshua Nelson
             </h1>
-            <h2 className="text-xl sm:text-2xl lg:text-3xl mt-2 font-normal text-darkGray dark:text-white w-full text-center lg:text-start">
+             <p className="text-base sm:text-xl mt-2 font-normal text-darkGray dark:text-white text-center lg:text-start">
+              Developer <span className='text-primary'>|</span> Musician <span className='text-primary'>|</span> Educator
+            </p>
+            {/* <h2 className="text-xl sm:text-2xl lg:text-3xl mt-2 font-normal text-darkGray dark:text-white w-full text-center lg:text-start">
               <span className="text-darkGray dark:text-primary">Software</span> Developer
-            </h2>
+            </h2> */}
             {/* Icons iteration */}
             <div className="flex mt-4 gap-9 sm:gap-12 md:pl-1">
               {icons.map((icon) => {
@@ -69,7 +72,7 @@ export default function HomeComponent() {
                     aria-label={`${icon.aria}`}
                     >
                       <icon.logo
-                        className=" text-darkGray dark:text-primary cursor-pointer border-b-primary scale-125"
+                        className=" text-darkGray dark:text-white cursor-pointer border-b-primary scale-125"
                       />
                     </a>
                   </div>
@@ -77,9 +80,9 @@ export default function HomeComponent() {
               })}
             </div>
             <div className='flex gap-4 mt-4 text-sm sm:text-base lg:text-lg'>
-              <LinkScroll to={'about'} smooth={true} duration={500} className='text-darkGray dark:text-primary font-semibold sm:hover:underline underline-offset-4 cursor-pointer'>About me</LinkScroll>
-              <LinkScroll to={'portfolio'} smooth={true} duration={500} className='text-darkGray dark:text-primary font-semibold sm:hover:underline underline-offset-4 cursor-pointer'>Portfolio</LinkScroll>
-              <Link to={'https://joshuanelsondev.github.io/resume/resume.pdf'} className='text-darkGray dark:text-primary font-semibold hover:underline underline-offset-4 cursor-pointer'>Resume</Link>
+              <LinkScroll to={'about'} smooth={true} duration={500} className='text-darkGray dark:text-white font-semibold sm:hover:underline underline-offset-4 decoration-primary cursor-pointer'>About me</LinkScroll>
+              <LinkScroll to={'portfolio'} smooth={true} duration={500} className='text-darkGray dark:text-white font-semibold sm:hover:underline underline-offset-4 decoration-primary cursor-pointer'>Portfolio</LinkScroll>
+              <Link to={'https://joshuanelsondev.github.io/resume/resume.pdf'} className='text-darkGray dark:text-white font-semibold hover:underline decoration-primary underline-offset-4 cursor-pointer'>Resume</Link>
             </div>
           </div>
         </div>
