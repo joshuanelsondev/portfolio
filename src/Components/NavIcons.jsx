@@ -15,7 +15,7 @@ export default function NavIcons() {
 
     return (
  
-      <div className='flex flex-col gap-10 text-darkGray'>
+      <div className='flex flex-col gap-10 text-darkGray dark:text-white'>
         {/* Loop through the nav buttons */}
             <div
               key={generateId()}
@@ -27,7 +27,7 @@ export default function NavIcons() {
                 to={`home`}
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-150}
                 duration={500}
               >
                 <MdHome
