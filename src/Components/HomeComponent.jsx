@@ -45,7 +45,7 @@ export default function HomeComponent() {
           <img
             src={PursuitHeadshot}
             alt="Headshot with green background"
-            className="h-[250px] sm:h-[350px] lg:h-[400px] w-auto  bg-darkGray z-10 rounded-2xl  dark:shadow-black"
+            className="h-[250px] sm:h-[350px] lg:h-[400px] w-auto  bg-darkGray z-10 rounded-2xl shadow-lg shadow-darkGray dark:shadow-black"
           />
           <div className="flex flex-col w-fit h-auto z-10 items-center lg:items-start">
             <h1 className="text-4xl font-semibold sm:text-5xl lg:text-6xl text-darkGray dark:text-primary drop-shadow-xl w-full">
