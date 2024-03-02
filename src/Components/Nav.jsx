@@ -30,7 +30,7 @@ export default function Nav({ handleThemeChange }) {
           <div className="absolute dark:invisible flex items-center lg:gap-4 md:gap-1">
             <MdLightMode
               onClick={() => handleThemeChange("dark")}
-              className="peer text-primary rounded-full p-2 cursor-pointer"
+              className="peer text-darkGray rounded-full p-2 cursor-pointer"
               size={40}
             />
           </div>

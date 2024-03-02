@@ -15,7 +15,7 @@ export default function NavIcons() {
 
     return (
  
-      <div className='flex flex-col gap-10'>
+      <div className='flex flex-col gap-10 text-darkGray dark:text-white'>
         {/* Loop through the nav buttons */}
             <div
               key={generateId()}
@@ -23,15 +23,15 @@ export default function NavIcons() {
             >
               <LinkScroll
                 className="peer"
-                activeClass="outline outline-2 rounded-full text-primary"
+                activeClass="outline outline-2 rounded-full"
                 to={`home`}
                 spy={true}
                 smooth={true}
-                offset={-50}
+                offset={-150}
                 duration={500}
               >
                 <MdHome
-                  className="text-primary dark:text-white rounded-full p-2 cursor-pointer"
+                  className=" dark:text-white rounded-full p-2 cursor-pointer"
                   size={40}
                 />
               </LinkScroll>
@@ -42,7 +42,7 @@ export default function NavIcons() {
             >
               <LinkScroll
                 className="peer"
-                activeClass="outline outline-2 rounded-full text-primary"
+                activeClass="outline outline-2 rounded-full "
                 to={`about`}
                 spy={true}
                 smooth={true}
@@ -50,7 +50,7 @@ export default function NavIcons() {
                 duration={500}
               >
                 <MdAccountCircle
-                  className="text-primary dark:text-white rounded-full p-2 cursor-pointer"
+                  className=" dark:text-white rounded-full p-2 cursor-pointer"
                   size={40}
                 />
               </LinkScroll>
@@ -61,7 +61,7 @@ export default function NavIcons() {
             >
               <LinkScroll
                 className="peer"
-                activeClass="outline outline-2 rounded-full text-primary"
+                activeClass="outline outline-2 rounded-full "
                 to={`portfolio`}
                 spy={true}
                 smooth={true}
@@ -69,7 +69,7 @@ export default function NavIcons() {
                 duration={500}
               >
                 <AiFillAppstore
-                  className="text-primary dark:text-white rounded-full p-2 cursor-pointer"
+                  className=" dark:text-white rounded-full p-2 cursor-pointer"
                   size={40}
                 />
               </LinkScroll>
@@ -80,7 +80,7 @@ export default function NavIcons() {
             >
               <LinkScroll
                 className="peer"
-                activeClass="outline outline-2 rounded-full text-primary"
+                activeClass="outline outline-2 rounded-full "
                 to={`contact`}
                 spy={true}
                 smooth={true}
@@ -88,7 +88,7 @@ export default function NavIcons() {
                 duration={500}
               >
                 <MdEmail
-                  className="text-primary dark:text-white rounded-full p-2 cursor-pointer"
+                  className=" dark:text-white rounded-full p-2 cursor-pointer"
                   size={40}
                 />
               </LinkScroll>
