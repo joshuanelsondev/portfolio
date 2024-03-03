@@ -6,7 +6,7 @@ import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 
 export default function Project({ project }) {
   return (
-    <div className="min-h-96 h-auto w-full p-2 flex flex-col items-start z-10 rounded-xl relative">
+    <div className="max-w-sm p-2 flex flex-col items-start z-10 rounded-xl relative object-cover">
       <div className="">
         <img
           src={`${project.image}`}

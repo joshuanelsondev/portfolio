@@ -40,7 +40,7 @@ export default function ContactComponent () {
     return (
       <div id='contact' className="h-full min-h-[600px] w-full max-w-[800px] flex flex-col bg-[#f2f2f2] rounded-md  mb-40 p-4 shadow">
         <div className="flex justify-between">
-          <h2 className="text-3xl  text-black h-20">Let's Connect!</h2>
+          <h2 className="text-3xl  text-black h-20">Let&apos;s Connect!</h2>
           <p className='text-xl font-semibold'>Joshua Nelson</p>
         </div>
         <form className="flex flex-col gap-8 rounded-md" ref={form} onSubmit={sendEmail}>
