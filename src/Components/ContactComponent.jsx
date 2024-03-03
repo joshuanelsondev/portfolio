@@ -39,7 +39,10 @@ export default function ContactComponent () {
 
     return (
       <div id='contact' className="h-full min-h-[600px] w-full max-w-[800px] flex flex-col bg-[#f2f2f2] rounded-md  mb-40 p-4 shadow">
-        <h2 className="text-3xl  text-black h-20">Contact me</h2>
+        <div className="flex justify-between">
+          <h2 className="text-3xl  text-black h-20">Let's Connect!</h2>
+          <p className='text-xl font-semibold'>Joshua Nelson</p>
+        </div>
         <form className="flex flex-col gap-8 rounded-md" ref={form} onSubmit={sendEmail}>
           <div className='grid gap-2'>
             <label htmlFor='from_name' className='text-black dark:text-black'>Name</label>
@@ -51,7 +54,7 @@ export default function ContactComponent () {
           </div> 
           <div className='grid gap-2'>
             <label htmlFor='message' className='text-black dark:text-black'>Message</label>
-            <textarea name='message' id='message' className='rounded h-60 text-black py-1 px-3 border border-[#ccc] shadow outline-primary resize-none' required />
+            <textarea name='message' id='message' className='rounded h-60 text-black p-4 border border-[#ccc] shadow outline-primary resize-none' required />
           </div> 
           <input className='bg-primary rounded p-2 text-darkGray font-semibold shadow shadow-gray md:bg-opacity-90 md:hover:bg-opacity-100 cursor-pointer' type="submit" value={btnMessage} />
         </form>
