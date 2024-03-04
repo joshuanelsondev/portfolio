@@ -40,7 +40,7 @@ const icons = [
 export default function HomeComponent() {
 
     return (
-      <div id='home' className="h-full min-h-[600px] w-full min-w-fit z-10 max-lg:pt-24 lg:grid">
+      <div id='home' className="h-full min-h-[600px] w-full min-w-fit z-10 max-lg:pt-24 lg:grid mb-20">
         <div className="flex flex-col lg:flex-row-reverse items-center md:justify-evenly lg:pl-10">
           <img
             src={PursuitHeadshot}

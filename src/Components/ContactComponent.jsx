@@ -38,7 +38,7 @@ export default function ContactComponent () {
   };
 
     return (
-      <div id='contact' className="h-full min-h-[600px] w-full max-w-[800px] flex flex-col bg-[#f2f2f2] rounded-md  mb-40 p-4 shadow scale-[80%] lg:scale-100 mt-20">
+      <div id='contact' className="h-full min-h-[600px] w-full max-w-[800px] flex flex-col bg-[#f2f2f2] rounded-md  mb-40 p-4 shadow-md shadow-gray scale-[80%] lg:scale-100 mt-20">
         <div className="flex justify-between">
           <h2 className="text-3xl  text-black h-20">Let&apos;s Connect!</h2>
           <p className='text-xl font-semibold hidden sm:block'>Joshua Nelson</p>
