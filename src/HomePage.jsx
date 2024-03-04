@@ -9,7 +9,7 @@ import Nav from "./Components/Nav";
 export default function HomePage({ handleThemeChange }) {
 
     return (
-      <div className="h-full w-full min-w-fit flex flex-col items-center ">
+      <div className="h-full w-full min-w-fit flex flex-col items-center">
           <Nav handleThemeChange={handleThemeChange} />
           <HomeComponent />
           <AboutComponent />

@@ -40,8 +40,8 @@ const icons = [
 export default function HomeComponent() {
 
     return (
-      <div id='home' className="h-full min-h-[600px] w-full min-w-fit z-10 pt-10 lg:grid">
-        <div className="flex flex-col lg:flex-row-reverse items-center md:justify-evenly ">
+      <div id='home' className="h-full min-h-[600px] w-full min-w-fit z-10 max-lg:pt-24 lg:grid mb-20">
+        <div className="flex flex-col lg:flex-row-reverse items-center md:justify-evenly lg:pl-10">
           <img
             src={PursuitHeadshot}
             alt="Headshot with green background"
@@ -80,9 +80,9 @@ export default function HomeComponent() {
               })}
             </div>
             <div className='flex gap-4 mt-4 text-sm sm:text-base lg:text-lg'>
-              <LinkScroll to={'about'} smooth={true} duration={500} className='text-darkGray dark:text-white font-semibold sm:hover:underline underline-offset-4 decoration-primary cursor-pointer'>About me</LinkScroll>
-              <LinkScroll to={'portfolio'} smooth={true} duration={500} className='text-darkGray dark:text-white font-semibold sm:hover:underline underline-offset-4 decoration-primary cursor-pointer'>Portfolio</LinkScroll>
-              <Link to={'https://joshuanelsondev.github.io/resume/resume.pdf'} className='text-darkGray dark:text-white font-semibold hover:underline decoration-primary underline-offset-4 cursor-pointer'>Resume</Link>
+              <LinkScroll to={'about'} smooth={true} duration={500} className='text-darkGray dark:text-white font-semibold sm:hover:underline underline-offset-8 decoration-primary cursor-pointer'>About me</LinkScroll>
+              <LinkScroll to={'portfolio'} smooth={true} duration={500} className='text-darkGray dark:text-white font-semibold sm:hover:underline underline-offset-8 decoration-primary cursor-pointer'>Portfolio</LinkScroll>
+              <Link to={'https://joshuanelsondev.github.io/resume/resume.pdf'} className='text-darkGray dark:text-white font-semibold hover:underline decoration-primary underline-offset-8 cursor-pointer'>Resume</Link>
             </div>
           </div>
         </div>
