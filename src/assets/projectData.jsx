@@ -1,5 +1,10 @@
 // ProjectData
 
+import Coffee from '../assets/images/coffee.png';
+import Devstack from '../assets/images/devstack.png';
+import Table from '../assets/images/table.png';
+import Twentyone from '../assets/images/twentyone.png';
+
 const projectData = [
   {
     id: "1f23fc8f-d981-4c42-87f7-9f717d930bfe",
@@ -17,7 +22,7 @@ const projectData = [
     ],
     image:
       "https://github.com/joshuanelsondev/devstack-frontend-project/raw/main/src/assets/DevStack-screenshot.png",
-    placeholder_image: ,
+    placeholder_image: Devstack,
     github_link: "https://github.com/joshuanelsondev/devstack-frontend-project",
     demo_link: "https://devstackportfolio.netlify.app",
     is_favorite: true,
@@ -40,6 +45,7 @@ const projectData = [
     ],
     image:
       "https://github.com/joshuanelsondev/table-frontend-project/blob/main/src/images/IndexScreenshot.png?raw=true",
+    placeholder_image: Table,
     github_link: "https://github.com/joshuanelsondev/table-frontend-project",
     demo_link: "https://thetable-app.netlify.app/",
     is_favorite: true,
@@ -54,6 +60,7 @@ const projectData = [
     tech: ["JavaScript", "CSS", "HTML"],
     image:
       "https://github.com/joshuanelsondev/twenty-one/blob/main/screenshots/twentyone_homepage_screenshot.png?raw=true",
+    placeholder_image: Twentyone,
     github_link: "https://github.com/joshuanelsondev/twenty-one",
     demo_link: "https://twentyonegame.netlify.app/",
     is_favorite: true,
@@ -68,6 +75,7 @@ const projectData = [
     tech: ["JavaScript", "HTML", "CSS"],
     image:
       "https://github.com/joshuanelsondev/sign-up-form/blob/main/images/sign-up-form-screenshot.png?raw=true",
+    placeholder_image: Coffee,
     github_link: "https://github.com/joshuanelsondev/sign-up-form",
     demo_link: "https://joshuanelsondev.github.io/sign-up-form/",
     is_favorite: true,
