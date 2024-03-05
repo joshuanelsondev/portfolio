@@ -16,7 +16,7 @@ export default function PortfolioComponent() {
         <h1 className="text-4xl lg:text-6xl font-semibold text-darkGray dark:text-primary mb-4 md:mb-10">Portfolio</h1>
         <div className="grid place-content-center lg:px-20 lg:grid-cols-2 gap-20">
           {projects.map((project) => (
-            <div key={project.id} className="cursor-pointer">
+            <div key={project.id} >
               <Project project={project} />
             </div>
           ))}
