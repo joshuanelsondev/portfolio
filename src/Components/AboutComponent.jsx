@@ -1,6 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
 // AboutComponent.jsx
-import { Link } from "react-router-dom";
 import { useState } from "react";
 import GrassHeadshot from "../assets/images/headshot_grass.jpeg";
 import SaxImage from "../assets/images/Press6.jpeg";
@@ -8,7 +7,9 @@ import SaxImage from "../assets/images/Press6.jpeg";
 
 export default function AboutComponent() {
     // State for showing the image
-    const [ showImg, setShowImg ] = useState(true);
+    const [showImg, setShowImg] = useState(true);
+    // State for showing the rest of the About me text section
+
     // Function to toggle the showImg state
     const toggleImg = () => {
       setShowImg(!showImg);
@@ -27,34 +28,7 @@ export default function AboutComponent() {
             <br />
             {/* Bio text */}
             <p className='px-4 text-justify sm:px-0'>
-              Thank you for visiting my page. I'm currently a developer and
-              saxophonist that loves to express my creativity through code and
-              music. Within the past year I've been able to grow as a developer
-              during my time as a fellow at{" "}
-              <Link
-                to={"https://www.pursuit.org/hire-from-pursuit"}
-                className="text-darkGray dark:text-primary font-bold hover:underline underline-offset-2"
-                target="_blank"
-              >
-                Pursuit
-              </Link>
-              . Learning from others and connecting with people from diverse
-              backgrounds...
-              {/*           
-                I'm a web developer and current fellow in the Pursuit software
-                engineering fellowship. I'm passionate about problem-solving,
-                creativity, and building functional digital experiences through
-                collaboration. I believe in using technology to empower
-                  underrepresented communities, and I'm committed to making a
-                positive impact through my skills and creativity. I love
-                connecting with people from diverse backgrounds and collaborating
-                effectively within teams. Learning from others is always a joy for
-                me. Beyond coding, I'm a saxophonist, performing at various venues
-                in New York City. I enjoy collaborating with other musicians and
-                creating musical experiences. I also enjoy sharing my musical
-                knowledge through teaching privately. Explore my website to see my
-                latest projects and join me in creating meaningful digital
-                solutions. Let's build something amazing together! Joshua Nelson */}
+              Thank you for visiting my page. I'm a web developer and Pursuit software engineering fellow, driven by a passion for coding and adept problem-solving. With a background as a jazz musician and instructor spanning over a decade, I bring my critical thinking intentional learning, and creativity to the tech world. After seven months of self-teaching, I successfully completed the  Fellowship and was hired as a coach. Currently coaching at Pursuit, I am actively seeking a full-time SWE role with a dynamic team, eager to make a meaningful impact outside the current organization. Let's embark on the journey of building something amazing together!
             </p>
           </div>
           {/* Images to toggle between */}
