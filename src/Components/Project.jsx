@@ -10,46 +10,8 @@ export default function Project({ project }) {
         <img
           src={`${project.image}`}
           alt={`${project.title} - Error Loading`}
-          className="rounded-md text-primary h-60 min-w-max box-border"
+          className="rounded-md text-primary h-60 w-[500px] box-border"
         />
-      {/* <div>
-        <div className="flex gap-4">
-          <a
-            href={project.github_link}
-            target="_blank"
-            rel="noreferrer"
-            className="text-primary dark:text-blue hover:text-dark hover:dark:text-primary"
-          >
-            <AiFillGithub size={20} />
-          </a>
-          <a
-            href={project.demo_link}
-            target="_blank"
-            className="text-primary dark:text-blue hover:text-dark hover:dark:text-primary"
-            rel="noreferrer"
-          >
-            <AiOutlineExport size={20} />
-          </a>
-        </div>
-      </div>
-      <Link
-        to={`/projects/${project.id}`}
-        className="text-3xl text-primary dark:text-blue font-semibold"
-      >
-        <p className="hover:text-dark hover:dark:text-primary">
-          {project.title}
-        </p>
-      </Link>
-      <p className="text-dark dark:text-blue text-lg">{project.description}</p>
-      <ul className="flex flex-wrap justify-start gap-x-4">
-        {project.tech.map((str, index) => {
-          return (
-            <li key={index} className="text-primary">
-              {str}
-            </li>
-          );
-        })}
-      </ul> */}
     </div>
   );
 }
