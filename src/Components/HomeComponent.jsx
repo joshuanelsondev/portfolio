@@ -8,7 +8,7 @@ import {
   AiFillInstagram,
   AiFillFacebook,
 } from "react-icons/ai";
-import  PursuitHeadshot  from "../assets/pursuit_headshot.jpg";
+import  PursuitHeadshot  from "../assets/images/pursuit_headshot.jpg";
 
 // Array of icons and links for external links
 const icons = [
@@ -40,7 +40,7 @@ const icons = [
 export default function HomeComponent() {
 
     return (
-      <div id='home' className="h-full min-h-[600px] w-full min-w-fit z-10 max-lg:pt-24 lg:grid mb-20">
+      <div id='home' className="h-full sm:min-h-[800px] w-full min-w-fit z-10 max-lg:pt-24 lg:grid mb-20">
         <div className="flex flex-col lg:flex-row-reverse items-center md:justify-evenly lg:pl-10">
           <img
             src={PursuitHeadshot}
@@ -48,10 +48,10 @@ export default function HomeComponent() {
             className="h-[250px] sm:h-[350px] lg:h-[400px] w-auto  bg-darkGray z-10 rounded-2xl shadow-lg shadow-darkGray dark:shadow-black"
           />
           <div className="flex flex-col w-fit h-auto z-10 items-center lg:items-start">
-            <h1 className="text-4xl font-semibold sm:text-5xl lg:text-6xl text-darkGray dark:text-primary drop-shadow-xl w-full text-center">
+            <h1 className="text-4xl font-semibold sm:text-5xl lg:text-6xl text-darkGray dark:text-primary drop-shadow-xl w-full text-center mt-10">
               Joshua Nelson
             </h1>
-             <p className="text-base sm:text-xl mt-2 font-normal text-darkGray dark:text-white text-center lg:text-start">
+             <p className="text-base sm:text-xl mt-2 font-normal text-darkGray dark:text-white text-center lg:text-start mt-4">
               Developer <span className='text-primary'>|</span> Musician <span className='text-primary'>|</span> Educator
             </p>
             {/* <h2 className="text-xl sm:text-2xl lg:text-3xl mt-2 font-normal text-darkGray dark:text-white w-full text-center lg:text-start">

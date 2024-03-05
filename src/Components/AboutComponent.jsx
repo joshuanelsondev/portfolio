@@ -2,8 +2,9 @@
 // AboutComponent.jsx
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import GrassHeadshot from "../assets/headshot_grass.jpeg";
-import SaxImage from "../assets/Press6.jpeg";
+import GrassHeadshot from "../assets/images/headshot_grass.jpeg";
+import SaxImage from "../assets/images/Press6.jpeg";
+
 
 export default function AboutComponent() {
     // State for showing the image
@@ -16,7 +17,7 @@ export default function AboutComponent() {
     return (
 
       <div id="about" className="flex items-start md:justify-evenly md:items-center h-full min-h-[600px] w-full mb-16 ">
-        <div className="flex flex-col items-center text-justify lg:flex-row lg:justify-evenly gap-10 h-auto w-full lg:pl-14 xl:p-4">
+        <div className="flex flex-col items-center lg:flex-row lg:justify-evenly gap-10 h-auto w-full lg:pl-14 xl:p-4">
           {/* Header and Bio container */}
           <div className="flex flex-col items-center lg:items-start lg:text-left lg:text-lg text-black dark:text-white rounded-lg max-w-[500px]">
             {/* Header */}
@@ -25,7 +26,7 @@ export default function AboutComponent() {
             </h2>
             <br />
             {/* Bio text */}
-            <p className='px-4'>
+            <p className='px-4 text-justify sm:px-0'>
               Thank you for visiting my page. I'm currently a developer and
               saxophonist that loves to express my creativity through code and
               music. Within the past year I've been able to grow as a developer
