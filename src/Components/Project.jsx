@@ -25,6 +25,7 @@ export default function Project({ project }) {
         alt={`${project.title} - Error Loading`} 
         onError={handleError}
         placeholderSrc={`${project.placeholder_image}`} 
+        width={400}
         className="rounded-md text-primary h-60 w-[500px] box-border" 
       />
     </div>
