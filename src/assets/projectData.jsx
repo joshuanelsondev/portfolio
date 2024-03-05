@@ -17,6 +17,7 @@ const projectData = [
     ],
     image:
       "https://github.com/joshuanelsondev/devstack-frontend-project/raw/main/src/assets/DevStack-screenshot.png",
+    placeholder_image: ,
     github_link: "https://github.com/joshuanelsondev/devstack-frontend-project",
     demo_link: "https://devstackportfolio.netlify.app",
     is_favorite: true,

@@ -2,8 +2,9 @@
 // AboutComponent.jsx
 import { Link } from "react-router-dom";
 import { useState } from "react";
-import GrassHeadshot from "../assets/headshot_grass.jpeg";
-import SaxImage from "../assets/Press6.jpeg";
+import GrassHeadshot from "../assets/images/headshot_grass.jpeg";
+import SaxImage from "../assets/images/Press6.jpeg";
+
 
 export default function AboutComponent() {
     // State for showing the image

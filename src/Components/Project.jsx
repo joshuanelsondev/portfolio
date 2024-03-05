@@ -10,6 +10,7 @@ export default function Project({ project }) {
         <img
           src={`${project.image}`}
           alt={`${project.title} - Error Loading`}
+          onError={this.src=''}
           className="rounded-md text-primary h-60 w-[500px] box-border"
         />
     </div>

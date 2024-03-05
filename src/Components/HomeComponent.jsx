@@ -8,7 +8,7 @@ import {
   AiFillInstagram,
   AiFillFacebook,
 } from "react-icons/ai";
-import  PursuitHeadshot  from "../assets/pursuit_headshot.jpg";
+import  PursuitHeadshot  from "../assets/images/pursuit_headshot.jpg";
 
 // Array of icons and links for external links
 const icons = [
