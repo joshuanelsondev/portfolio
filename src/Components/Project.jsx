@@ -6,11 +6,11 @@ import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 
 export default function Project({ project }) {
   return (
-    <div className="max-w-sm p-2 z-10">
+    <div className="max-w-sm p-2 z-10 relative">
         <img
           src={`${project.image}`}
-          alt={`'${project.title}' \n Error Loading`}
-          className="rounded-md text-primary h-60"
+          alt={`${project.title} - Error Loading`}
+          className="rounded-md text-primary h-60 min-w-max box-border"
         />
       {/* <div>
         <div className="flex gap-4">
