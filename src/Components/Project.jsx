@@ -16,7 +16,7 @@ export default function Project({ project }) {
 
 
   return (
-    <div className="max-w-sm p-2 z-10 relative">
+    <div className=" z-10 relative">
       {showErrorMessage && (
         <p aria-label={`Error loading ${project.title} project`} className='text-darkGray dark:text-primary font-semibold text-center mb-2'>Error Loading - {project.title}</p>
       )}
@@ -24,9 +24,9 @@ export default function Project({ project }) {
         src={`${project.image}`} 
         alt={`${project.title} - Error Loading`} 
         onError={handleError}
-        placeholderSrc={`${project.placeholder_image}`} 
-        width={400}
-        className="rounded-md text-primary h-60 w-[500px] box-border" 
+        placeholderSrc={`${project.placeholder_image}`}
+
+        className="rounded-md text-primary h-60 w-[400px] max-w-[600px] box-border" 
       />
     </div>
   );

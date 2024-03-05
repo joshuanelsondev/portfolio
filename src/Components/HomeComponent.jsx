@@ -40,7 +40,7 @@ const icons = [
 export default function HomeComponent() {
 
     return (
-      <div id='home' className="h-full sm:min-h-[800px] w-full min-w-fit z-10 max-lg:pt-24 lg:grid my-20">
+      <div id='home' className="h-full sm:min-h-[800px] w-full min-w-fit z-10 max-lg:pt-24 lg:grid mb-20">
         <div className="flex flex-col lg:flex-row-reverse items-center md:justify-evenly lg:pl-10">
           <img
             src={PursuitHeadshot}
@@ -51,7 +51,7 @@ export default function HomeComponent() {
             <h1 className="text-4xl font-semibold sm:text-5xl lg:text-6xl text-darkGray dark:text-primary drop-shadow-xl w-full text-center mt-10">
               Joshua Nelson
             </h1>
-             <p className="text-base sm:text-xl mt-2 font-normal text-darkGray dark:text-white text-center lg:text-start">
+             <p className="text-base sm:text-xl mt-2 font-normal text-darkGray dark:text-white text-center lg:text-start mt-4">
               Developer <span className='text-primary'>|</span> Musician <span className='text-primary'>|</span> Educator
             </p>
             {/* <h2 className="text-xl sm:text-2xl lg:text-3xl mt-2 font-normal text-darkGray dark:text-white w-full text-center lg:text-start">
