@@ -51,7 +51,7 @@ export default function HomeComponent() {
             <h1 className="text-4xl font-semibold sm:text-5xl lg:text-6xl text-darkGray dark:text-primary drop-shadow-xl w-full text-center mt-10">
               Joshua Nelson
             </h1>
-             <p className="text-base sm:text-xl mt-2 font-normal text-darkGray dark:text-white text-center lg:text-start mt-4">
+             <p className="text-base sm:text-xl font-normal text-darkGray dark:text-white text-center lg:text-start mt-4">
               Developer <span className='text-primary'>|</span> Musician <span className='text-primary'>|</span> Educator
             </p>
             {/* <h2 className="text-xl sm:text-2xl lg:text-3xl mt-2 font-normal text-darkGray dark:text-white w-full text-center lg:text-start">
@@ -80,8 +80,8 @@ export default function HomeComponent() {
               })}
             </div>
             <div className='flex gap-4 mt-4 text-sm sm:text-base lg:text-lg'>
-              <LinkScroll to={'about'} smooth={true} duration={500} className='text-darkGray dark:text-white font-semibold sm:hover:underline underline-offset-8 decoration-primary cursor-pointer'>About me</LinkScroll>
-              <LinkScroll to={'portfolio'} smooth={true} duration={500} className='text-darkGray dark:text-white font-semibold sm:hover:underline underline-offset-8 decoration-primary cursor-pointer'>Portfolio</LinkScroll>
+              <LinkScroll to={'about'} smooth={true} offset={-50} duration={500} className='text-darkGray dark:text-white font-semibold sm:hover:underline underline-offset-8 decoration-primary cursor-pointer'>About me</LinkScroll>
+              <LinkScroll to={'portfolio'} smooth={true} offset={-50} duration={500} className='text-darkGray dark:text-white font-semibold sm:hover:underline underline-offset-8 decoration-primary cursor-pointer'>Portfolio</LinkScroll>
               <Link to={'https://joshuanelsondev.github.io/resume/resume.pdf'} className='text-darkGray dark:text-white font-semibold hover:underline decoration-primary underline-offset-8 cursor-pointer'>Resume</Link>
             </div>
           </div>
