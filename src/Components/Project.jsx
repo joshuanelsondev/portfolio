@@ -2,7 +2,6 @@
 
 import PropTypes from "prop-types";
 import { useState } from 'react';
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import { Link } from "react-router-dom";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 
@@ -20,11 +19,10 @@ export default function Project({ project }) {
       {showErrorMessage && (
         <p aria-label={`Error loading ${project.title} project`} className='text-darkGray dark:text-primary font-semibold text-center mb-2'>Error Loading - {project.title}</p>
       )}
-      <LazyLoadImage 
+      <img 
         src={`${project.image}`} 
         alt={`${project.title} - Error Loading`} 
         onError={handleError}
-        placeholderSrc={`${project.placeholder_image}`}
         className="rounded-md text-primary h-60 w-[400px] max-w-[600px] box-border" 
       />
     </div>
