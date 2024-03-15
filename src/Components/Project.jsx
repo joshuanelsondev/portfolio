@@ -23,7 +23,7 @@ export default function Project({ project }) {
         src={`${project.image}`} 
         alt={`${project.title} - Error Loading`} 
         onError={handleError}
-        className="rounded-md text-primary h-60 w-[400px] max-w-[600px] box-border" 
+        className="rounded-md text-primary h-60 w-[350px] sm:w-[400px] max-w-[600px] box-border" 
       />
     </div>
   );
