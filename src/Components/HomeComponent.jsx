@@ -5,8 +5,6 @@ import { v4 as generateId } from "uuid";
 import {
   AiFillLinkedin,
   AiOutlineGithub,
-  AiFillInstagram,
-  AiFillFacebook,
 } from "react-icons/ai";
 import  PursuitHeadshot  from "../assets/images/pursuit_headshot.jpg";
 
@@ -23,18 +21,6 @@ const icons = [
     logo: AiOutlineGithub,
     link: "https://github.com/joshuanelsondev",
     aria: "Link to Joshua Nelson's GitHub profile"
-  },
-  {
-    id: generateId(),
-    logo: AiFillFacebook,
-    link: "https://www.facebook.com/JoshuaNelsonSax",
-    aria: "Link to Joshua Nelson's Facebook page"
-  },
-  {
-    id: generateId(),
-    logo: AiFillInstagram,
-    link: "https://www.instagram.com/joshuanelsonmusic/",
-    aria: "Link to Joshua Nelson's Instagram page"
   },
 ];
 export default function HomeComponent() {
@@ -89,4 +75,3 @@ export default function HomeComponent() {
       </div>
     );
 }
-
