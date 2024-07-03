@@ -5,8 +5,6 @@ import { v4 as generateId } from "uuid";
 import {
   AiFillLinkedin,
   AiOutlineGithub,
-  AiFillInstagram,
-  AiFillFacebook,
 } from "react-icons/ai";
 import  PursuitHeadshot  from "../assets/images/pursuit_headshot.jpg";
 
@@ -23,18 +21,6 @@ const icons = [
     logo: AiOutlineGithub,
     link: "https://github.com/joshuanelsondev",
     aria: "Link to Joshua Nelson's GitHub profile"
-  },
-  {
-    id: generateId(),
-    logo: AiFillFacebook,
-    link: "https://www.facebook.com/JoshuaNelsonSax",
-    aria: "Link to Joshua Nelson's Facebook page"
-  },
-  {
-    id: generateId(),
-    logo: AiFillInstagram,
-    link: "https://www.instagram.com/joshuanelsonmusic/",
-    aria: "Link to Joshua Nelson's Instagram page"
   },
 ];
 export default function HomeComponent() {
@@ -54,11 +40,8 @@ export default function HomeComponent() {
              <p className="text-base sm:text-xl font-normal text-darkGray dark:text-white text-center lg:text-start mt-4">
               Developer <span className='text-primary'>|</span> Musician <span className='text-primary'>|</span> Educator
             </p>
-            {/* <h2 className="text-xl sm:text-2xl lg:text-3xl mt-2 font-normal text-darkGray dark:text-white w-full text-center lg:text-start">
-              <span className="text-darkGray dark:text-primary">Software</span> Developer
-            </h2> */}
             {/* Icons iteration */}
-            <div className="flex mt-4 gap-9 sm:gap-12 md:pl-1">
+            <div className="flex mt-4 gap-9 md:pl-1">
               {icons.map((icon) => {
                 return (
                   <div
@@ -89,4 +72,3 @@ export default function HomeComponent() {
       </div>
     );
 }
-
