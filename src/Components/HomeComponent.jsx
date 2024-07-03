@@ -40,11 +40,8 @@ export default function HomeComponent() {
              <p className="text-base sm:text-xl font-normal text-darkGray dark:text-white text-center lg:text-start mt-4">
               Developer <span className='text-primary'>|</span> Musician <span className='text-primary'>|</span> Educator
             </p>
-            {/* <h2 className="text-xl sm:text-2xl lg:text-3xl mt-2 font-normal text-darkGray dark:text-white w-full text-center lg:text-start">
-              <span className="text-darkGray dark:text-primary">Software</span> Developer
-            </h2> */}
             {/* Icons iteration */}
-            <div className="flex mt-4 gap-9 sm:gap-12 md:pl-1">
+            <div className="flex mt-4 gap-9 md:pl-1">
               {icons.map((icon) => {
                 return (
                   <div
