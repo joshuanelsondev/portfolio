@@ -1,87 +1,110 @@
 // ProjectData
 
-import Coffee from '../assets/images/coffee.png';
-import Devstack from '../assets/images/devstack.png';
-import Table from '../assets/images/table.png';
-import Twentyone from '../assets/images/twentyone.png';
+import Coffee from '../assets/images/coffee.png'
+import Devstack from '../assets/images/devstack.png'
+import Table from '../assets/images/table.png'
+import Twentyone from '../assets/images/twentyone.png'
 
 const projectData = [
   {
-    id: "1f23fc8f-d981-4c42-87f7-9f717d930bfe",
-    title: "DevStack Portfolio Website",
+    id: 'bd150cff-1bc7-45e0-8b3e-9b572e149273',
+    title: 'Pantri',
     description:
-      "This platform serves as a showcase for developers to present their projects in an organized and professional manner. Developers can keep their portfolio up to date by editing existing projects or adding new ones as they progress in their coding journey. In future versions, users will be able to customize their own themes for their portfolio.",
+      "Developed an innovative online farmer's market app that connects consumers directly with local farmers, making it easy to source fresh produce. The platform enhances the reach of farmers' markets, empowering users to support local agriculture while fostering a strong sense of community.",
     tech: [
-      "JavaScript",
-      "React.js",
-      "Axios",
-      "TailwindCSS",
-      "PostgreSql",
-      "Express.js",
-      "Node.js",
+      'JavaScript',
+      'React.js',
+      'Axios',
+      'TailwindCSS',
+      'PostgreSql',
+      'Express.js',
+      'Node.js',
     ],
     image:
-      "https://github.com/joshuanelsondev/devstack-frontend-project/raw/main/src/assets/DevStack-screenshot.png",
+      'https://github.com/joshuanelsondev/portfolio-frontend/blob/main/src/assets/images/pantri-products.jpeg?raw=true',
     placeholder_image: Devstack,
-    github_link: "https://github.com/joshuanelsondev/devstack-frontend-project",
-    demo_link: "https://devstackportfolio.netlify.app",
+    github_link: 'https://github.com/cap-team-2/Pantri-frontend',
+    demo_link: 'https://ourpantri.com',
     is_favorite: true,
-    created_on: "2023-05-22T04:00:00.000Z",
+    created_on: '2024-08-14T04:00:00.000Z',
     updated_on: null,
   },
-  {
-    id: "22e0b15b-8848-447a-a256-6352ca8981cd",
-    title: "The Table",
-    description:
-      "This was my first fullstack partnered project. The Table is an app based on the idea of a potluck, a meal or party to which each of the guests contributes a dish. The Table allows users to add their own plate to the table. Users can view the pre-existing food items, add new dishes, update the dishes, and delete them. The purpose of The Table is to provide a platform for potluck events where people can easily view, add and manage dishes.",
-    tech: [
-      "JavaScript",
-      "React.js",
-      "Axios",
-      "Tailwind CSS",
-      "PostgreSQL",
-      "Express.js",
-      "Node.js",
-    ],
-    image:
-      "https://github.com/joshuanelsondev/table-frontend-project/blob/main/src/images/IndexScreenshot.png?raw=true",
-    placeholder_image: Table,
-    github_link: "https://github.com/joshuanelsondev/table-frontend-project",
-    demo_link: "https://thetable-app.netlify.app/",
-    is_favorite: true,
-    created_on: "2023-05-08T04:00:00.000Z",
-    updated_on: null,
-  },
-  {
-    id: "1395b278-1cc9-4b48-ac60-fc0a03b8f75b",
-    title: "Twenty-One",
-    description:
-      "This is my frontend portfolio project for Pursuit. This app is a simplified version of the game Twenty-One, also known as Blackjack and a few other names. This app makes api calls to the deck of cards API to simulate using a single deck or multiple decks of cards. The API randomuser.me is used to generate random usernames.",
-    tech: ["JavaScript", "CSS", "HTML"],
-    image:
-      "https://github.com/joshuanelsondev/twenty-one/blob/main/screenshots/twentyone_homepage_screenshot.png?raw=true",
-    placeholder_image: Twentyone,
-    github_link: "https://github.com/joshuanelsondev/twenty-one",
-    demo_link: "https://twentyonegame.netlify.app/",
-    is_favorite: true,
-    created_on: "2023-01-09T05:00:00.000Z",
-    updated_on: null,
-  },
-  {
-    id: "c86e75da-1305-4ce8-a5b7-744acdf078a9",
-    title: "Sign-up-Form",
-    description:
-      'A project from the Odin Project site where I created a sign-up-form. I used the Hero page design and worked on media queries to make my page responsive. I also used"JavaScript"for the form validation',
-    tech: ["JavaScript", "HTML", "CSS"],
-    image:
-      "https://github.com/joshuanelsondev/sign-up-form/blob/main/images/sign-up-form-screenshot.png?raw=true",
-    placeholder_image: Coffee,
-    github_link: "https://github.com/joshuanelsondev/sign-up-form",
-    demo_link: "https://joshuanelsondev.github.io/sign-up-form/",
-    is_favorite: true,
-    created_on: "2022-10-03T04:00:00.000Z",
-    updated_on: null,
-  },
+  //  {
+  //    id: '1f23fc8f-d981-4c42-87f7-9f717d930bfe',
+  //    title: 'DevStack Portfolio Website',
+  //    description:
+  //      'This platform serves as a showcase for developers to present their projects in an organized and professional manner. Developers can keep their portfolio up to date by editing existing projects or adding new ones as they progress in their coding journey. In future versions, users will be able to customize their own themes for their portfolio.',
+  //    tech: [
+  //      'JavaScript',
+  //      'React.js',
+  //      'Axios',
+  //      'TailwindCSS',
+  //      'PostgreSql',
+  //      'Express.js',
+  //      'Node.js',
+  //    ],
+  //    image:
+  //      'https://github.com/joshuanelsondev/devstack-frontend-project/raw/main/src/assets/DevStack-screenshot.png',
+  //    placeholder_image: Devstack,
+  //    github_link: 'https://github.com/joshuanelsondev/devstack-frontend-project',
+  //    demo_link: 'https://devstackportfolio.netlify.app',
+  //    is_favorite: true,
+  //    created_on: '2023-05-22T04:00:00.000Z',
+  //    updated_on: null,
+  //  },
+  //  {
+  //    id: '22e0b15b-8848-447a-a256-6352ca8981cd',
+  //    title: 'The Table',
+  //    description:
+  //      'This was my first fullstack partnered project. The Table is an app based on the idea of a potluck, a meal or party to which each of the guests contributes a dish. The Table allows users to add their own plate to the table. Users can view the pre-existing food items, add new dishes, update the dishes, and delete them. The purpose of The Table is to provide a platform for potluck events where people can easily view, add and manage dishes.',
+  //    tech: [
+  //      'JavaScript',
+  //      'React.js',
+  //      'Axios',
+  //      'Tailwind CSS',
+  //      'PostgreSQL',
+  //      'Express.js',
+  //      'Node.js',
+  //    ],
+  //    image:
+  //      'https://github.com/joshuanelsondev/table-frontend-project/blob/main/src/images/IndexScreenshot.png?raw=true',
+  //    placeholder_image: Table,
+  //    github_link: 'https://github.com/joshuanelsondev/table-frontend-project',
+  //    demo_link: 'https://thetable-app.netlify.app/',
+  //    is_favorite: true,
+  //    created_on: '2023-05-08T04:00:00.000Z',
+  //    updated_on: null,
+  //  },
+  //  {
+  //    id: '1395b278-1cc9-4b48-ac60-fc0a03b8f75b',
+  //    title: 'Twenty-One',
+  //    description:
+  //      'This is my frontend portfolio project for Pursuit. This app is a simplified version of the game Twenty-One, also known as Blackjack and a few other names. This app makes api calls to the deck of cards API to simulate using a single deck or multiple decks of cards. The API randomuser.me is used to generate random usernames.',
+  //    tech: ['JavaScript', 'CSS', 'HTML'],
+  //    image:
+  //      'https://github.com/joshuanelsondev/twenty-one/blob/main/screenshots/twentyone_homepage_screenshot.png?raw=true',
+  //    placeholder_image: Twentyone,
+  //    github_link: 'https://github.com/joshuanelsondev/twenty-one',
+  //    demo_link: 'https://twentyonegame.netlify.app/',
+  //    is_favorite: true,
+  //    created_on: '2023-01-09T05:00:00.000Z',
+  //    updated_on: null,
+  //  },
+  //  {
+  //    id: 'c86e75da-1305-4ce8-a5b7-744acdf078a9',
+  //    title: 'Sign-up-Form',
+  //    description:
+  //      'A project from the Odin Project site where I created a sign-up-form. I used the Hero page design and worked on media queries to make my page responsive. I also used"JavaScript"for the form validation',
+  //    tech: ['JavaScript', 'HTML', 'CSS'],
+  //    image:
+  //      'https://github.com/joshuanelsondev/sign-up-form/blob/main/images/sign-up-form-screenshot.png?raw=true',
+  //    placeholder_image: Coffee,
+  //    github_link: 'https://github.com/joshuanelsondev/sign-up-form',
+  //    demo_link: 'https://joshuanelsondev.github.io/sign-up-form/',
+  //    is_favorite: true,
+  //    created_on: '2022-10-03T04:00:00.000Z',
+  //    updated_on: null,
+  //  },
   // {
   //   id: "42dfe231-1e5d-42e1-983d-d732b23037d3",
   //   title: "Etch-a-Sketch",
@@ -96,6 +119,6 @@ const projectData = [
   //   created_on: "2022-06-25T04:00:00.000Z",
   //   updated_on: null,
   // },
-];
+]
 
-export { projectData };
+export { projectData }
